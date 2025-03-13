@@ -1,14 +1,14 @@
 {
-  "name": "bikiran-accounts",
+  "name": "env-hosting-admin",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev -p 7215",
+    "dev": "next dev -p 7601",
     "build": "next build",
-    "start": "next start -p 7215",
+    "start": "next start -p 7601",
     "lint": "next lint",
-    "test": "yarn build && yarn start -p 7215"
+    "test": "yarn build && yarn start -p 7601"
   },
   "dependencies": {
     "@google-cloud/storage": "^7.15.2",
