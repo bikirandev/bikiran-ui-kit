@@ -48,15 +48,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <ComposeProviders
           components={[Com2Provider, InitProvider, Auth2Provider]}
         >
-          {children}
+          <main> {children}</main>
         </ComposeProviders>
-
-        {getMode() === "com" ? (
-          <>
-            <GoogleAnalytics gaId="G-HC30L40DJS" />
-            <CrispWithNoSSR />
-          </>
-        ) : null}
       </body>
     </html>
   );
