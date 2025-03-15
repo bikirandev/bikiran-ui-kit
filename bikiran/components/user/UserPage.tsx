@@ -4,12 +4,6 @@ import React, { useState } from "react";
 import { menuArray } from "./constant";
 
 const UserPage = () => {
-  // const [active, setActive] = useState(false);
-
-  // const handlePricingDetails = () => {
-  //   setActive((prev) => !prev);
-  // };
-
   const [activeNavId, setActiveNavId] = useState<number | null>(null);
 
   const handleNavClick = (id: number) => {
@@ -19,7 +13,7 @@ const UserPage = () => {
 
   return (
     <div className="w-[230px] h-screen bg-[#07090B] text-primary-100 ">
-      {menuArray.map((item) => (
+      {menuArray.map((item: any) => (
         <ul key={item.id} className="px-2.5 pt-4">
           <li
             onClick={() => handleNavClick(item.id)}
@@ -50,9 +44,9 @@ const UserPage = () => {
 
           {activeNavId === item.id && item.subMenu && (
             <ul
-              className={`pl-8 mt-2 space-y-1 submenu ${activeNavId === item.id ? "open" : ""}`}
+              className={`pl-8 mt-2 space-y-1 submenu transition-all duration-300 ${activeNavId === item.id ? "open" : ""}`}
             >
-              {item.subMenu?.map((subItem, index) => (
+              {item.subMenu?.map((subItem: any, index: any) => (
                 <li
                   key={index}
                   className="p-2 text-sm text-gray-300 hover:bg-gray-700 rounded"
