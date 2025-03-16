@@ -58,20 +58,20 @@ export const menuArray: NavItem[] = [
           {
             id: "1",
             title: "Domain Package",
-            iconL: icons.iconSubmenuUser,
-            iconF: icons.iconSubmenuUserFill,
+            iconL: icons.iconSubmenuPricing,
+            iconF: icons.iconSubmenuPricingFill,
           },
           {
             id: "2",
             title: "Subscriptions",
-            iconL: icons.iconSubmenuUser,
-            iconF: icons.iconSubmenuUserFill,
+            iconL: icons.iconSubmenuInvoice,
+            iconF: icons.iconSubmenuInvoiceFill,
           },
           {
             id: "3",
             title: "Delete Domain",
-            iconL: icons.iconSubmenuUser,
-            iconF: icons.iconSubmenuUserFill,
+            iconL: icons.iconSubmenuDeleted,
+            iconF: icons.iconSubmenuDeletedFill,
           },
         ]
     },
