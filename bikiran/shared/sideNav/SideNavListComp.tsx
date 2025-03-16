@@ -19,27 +19,29 @@ const SideNavListComp = () => {
         <ul key={item.id} className="px-2.5 pt-4">
           <li
             onClick={() => handleNavClick(item.id)}
-            className="relative group flex gap-2.5 p-2 cursor-pointer bg-slate-900 -z-100"
+            className={`relative group flex gap-2.5 p-2 cursor-pointer ${activeNavId === item.id ? "bg-slate-900" : ""}`}
           >
-            <div className="w-[26px]">
-              <Image
-                src={item.iconLine}
-                alt="alt"
-                width={0}
-                height={0}
-                sizes="100vw"
-                className="w-full h-auto opacity-100 group-hover:opacity-0"
-              />
-              <Image
-                src={item.iconFill}
-                alt="alt"
-                width={0}
-                height={0}
-                sizes="100vw"
-                className="w-[26px] absolute top-2 opacity-0 group-hover:opacity-100"
-              />
+            <div className="flex gap-2.5 ">
+              <div className=" w-[26px]">
+                <Image
+                  src={item.iconLine}
+                  alt="alt"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-auto opacity-100 group-hover:opacity-0"
+                />
+                <Image
+                  src={item.iconFill}
+                  alt="alt"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-[26px] absolute top-2 opacity-0 group-hover:opacity-100"
+                />
+              </div>
+              <h2>{item.title}</h2>
             </div>
-            <h2>{item.title}</h2>
           </li>
 
           {/* Submenu */}
@@ -48,10 +50,9 @@ const SideNavListComp = () => {
               {item.subMenu?.map((subItem: any, index: any) => (
                 <li
                   key={index}
-                  className="relative group cursor-pointer pl-[18px] text-gray-300 rounded"
+                  className="relative group cursor-pointer pl-[18px] text-gray-300"
                 >
-
-                  <div className="absolute left-[0px] -top-[26px] h-full w-[1px] bg-gray-400" />
+                  <div className="absolute left-0 -top-[26px] h-full w-[1px] bg-gray-400" />
                   <svg
                     className="absolute left-0 top-[35%] -translate-y-1/2"
                     width="20"

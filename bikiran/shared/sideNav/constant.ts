@@ -57,13 +57,19 @@ export const menuArray: NavItem[] = [
         subMenu: [
           {
             id: "1",
-            title: "List of User",
+            title: "Domain Package",
             iconL: icons.iconSubmenuUser,
             iconF: icons.iconSubmenuUserFill,
           },
           {
             id: "2",
-            title: "Properties",
+            title: "Subscriptions",
+            iconL: icons.iconSubmenuUser,
+            iconF: icons.iconSubmenuUserFill,
+          },
+          {
+            id: "3",
+            title: "Delete Domain",
             iconL: icons.iconSubmenuUser,
             iconF: icons.iconSubmenuUserFill,
           },
