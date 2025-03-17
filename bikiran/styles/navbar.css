@@ -8,3 +8,12 @@
 .navbar_wrapper.position-high {
   @apply shadow-[8px_10px_80px_rgb(0_15_55_/_10%)];
 }
+
+.scrollbar-hidden {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}

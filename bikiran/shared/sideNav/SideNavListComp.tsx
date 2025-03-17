@@ -12,7 +12,7 @@ const SideNavListComp = () => {
   };
 
   return (
-    <div className="w-[230px] h-screen bg-[#07090B] text-primary-100 ">
+    <div className="w-[230px] h-screen bg-[#07090B] text-primary-100  overflow-y-auto scrollbar-hidden">
       {/* side nav menu... */}
 
       {menuArray.map((item: NavItem) => (
@@ -55,7 +55,7 @@ const SideNavListComp = () => {
                 {item.subMenu?.map((subItem: any, index: any) => (
                   <li
                     key={index}
-                    className="relative group cursor-pointer pl-[18px] text-gray-300"
+                    className="relative group cursor-pointer pl-[17px] text-gray-300"
                   >
                     <div className="absolute left-0 -top-[26px] h-full w-[1px] bg-gray-400" />
 
@@ -75,25 +75,23 @@ const SideNavListComp = () => {
                       />
                     </svg>
 
-                    <div className="relative z-10 flex gap-1.5 hover:bg-red-800 p-2 rounded">
-                      <div className="w-[20px]">
-                        <Image
-                          src={subItem.iconL}
-                          alt="alt"
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          className="w-full h-auto opacity-100 group-hover:opacity-0"
-                        />
-                        <Image
-                          src={subItem.iconF}
-                          alt="alt"
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          className="w-[20px] absolute top-2 opacity-0 group-hover:opacity-100"
-                        />
-                      </div>
+                    <div className="relative z-10 flex gap-1.5 items-center hover:bg-slate-800 p-2 rounded">
+                      <Image
+                        src={subItem.iconL}
+                        alt="alt"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-[20px] h-auto opacity-100 group-hover:opacity-0"
+                      />
+                      <Image
+                        src={subItem.iconF}
+                        alt="alt"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-[20px] absolute top-2.5 opacity-0 group-hover:opacity-100"
+                      />
 
                       <span className="text-ellipsis overflow-hidden whitespace-nowrap">
                         {subItem.title}
