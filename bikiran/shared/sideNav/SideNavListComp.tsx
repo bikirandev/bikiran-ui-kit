@@ -22,14 +22,14 @@ const SideNavListComp = () => {
             className={`relative z-10 group flex gap-2.5 p-2 cursor-pointer ${activeNavId === item.id ? "bg-slate-900" : ""}`}
           >
             <div className="flex gap-2.5 ">
-              <div className=" w-[26px]">
+              <div className=" w-[26px] ">
                 <Image
                   src={item.iconLine}
                   alt="alt"
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="w-full h-auto opacity-100 group-hover:opacity-0"
+                  className="w-full h-auto opacity-100 group-hover:opacity-0 transition-all duration-500"
                 />
                 <Image
                   src={item.iconFill}
@@ -37,7 +37,7 @@ const SideNavListComp = () => {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="w-[26px] absolute top-2 opacity-0 group-hover:opacity-100"
+                  className="w-[26px] absolute top-2 opacity-0 group-hover:opacity-100 transition-all duration-300"
                 />
               </div>
               <h2>{item.title}</h2>
@@ -46,8 +46,10 @@ const SideNavListComp = () => {
 
           {/* Submenu */}
           <div
-            className={`overflow-hidden transition-all duration-1000 ${
-              activeNavId ? "max-h-[1000px] opacity-100" : "max-h-0  opacity-0"
+            className={`overflow-hidden transition-all duration-1000 ease-in-out ${
+              activeNavId
+                ? "max-h-[1000px] opacity-100 ease-in-out"
+                : "max-h-0 opacity-0 ease-in-out"
             }`}
           >
             {activeNavId === item.id && item.subMenu && (
@@ -75,14 +77,14 @@ const SideNavListComp = () => {
                       />
                     </svg>
 
-                    <div className="relative z-10 flex gap-1.5 items-center hover:bg-slate-800 p-2 rounded">
+                    <div className="relative z-10 flex gap-1.5 items-center hover:bg-slate-800 p-2 rounded ">
                       <Image
                         src={subItem.iconL}
                         alt="alt"
                         width={0}
                         height={0}
                         sizes="100vw"
-                        className="w-[20px] h-auto opacity-100 group-hover:opacity-0"
+                        className="w-[20px] h-auto opacity-100 group-hover:opacity-0 transition-all duration-300"
                       />
                       <Image
                         src={subItem.iconF}
@@ -90,7 +92,7 @@ const SideNavListComp = () => {
                         width={0}
                         height={0}
                         sizes="100vw"
-                        className="w-[20px] absolute top-2.5 opacity-0 group-hover:opacity-100"
+                        className="w-[20px] absolute top-2.5 opacity-0 group-hover:opacity-100 transition-all duration-300"
                       />
 
                       <span className="text-ellipsis overflow-hidden whitespace-nowrap">
