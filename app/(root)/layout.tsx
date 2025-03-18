@@ -7,6 +7,7 @@ import ComposeProviders from "@/bik-lib/lib/ComposeProviders";
 import { TooltipProvider } from "@/bikiran/components/ui/tooltip";
 import FixedHeaderControl from "@/bikiran/shared/header/FixedHeaderControl";
 import HeaderSection from "@/bikiran/shared/header/HeaderSection";
+import SideNavPage from "@/bikiran/shared/sideNav/SideNavPage";
 
 type RootLayoutProps = {
   children: ReactNode;
@@ -23,7 +24,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
       ]}
     >
       {/* <HeaderSection /> */}
-      <main> {children}</main>
+      <main>
+        <SideNavPage />
+        <div className="ml-[230px]">{children}</div>
+      </main>
 
       {/* Accept Cookies */}
       <CookiesAcceptPopup />

@@ -4,7 +4,10 @@ import { FC } from "react";
 const P: FC = () => {
   return (
     <>
-      <UserPage />
+      {/* <UserPage /> */}
+      <div>
+        <h2>Domain</h2>
+      </div>
     </>
   );
 };

@@ -1,10 +1,10 @@
 import React from "react";
-import SideNavPage from "@/bikiran/shared/sideNav/SideNavPage";
+import ListUser from "./ListUser";
 
 const UserPage = () => {
   return (
     <>
-      <SideNavPage />
+      <ListUser />
     </>
   );
 };

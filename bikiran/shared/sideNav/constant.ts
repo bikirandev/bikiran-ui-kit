@@ -3,7 +3,7 @@ import { NavItem } from "@/bikiran/shared/sideNav/NavMenuTypes";
 
 export const menuArray: NavItem[] = [
     {
-        id: "/user",
+        id: "/user/list",
         miniTitle: "User",
         title: "Users",
         iconLine: icons.iconSidebarUser,
@@ -48,7 +48,7 @@ export const menuArray: NavItem[] = [
         ],
     },
     {
-        id: "/domain",
+        id: "/domain/package",
         miniTitle: "domain",
         title: "Domain",
         iconLine: icons.iconSidebarDomain,
