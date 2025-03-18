@@ -5,6 +5,8 @@ import CookiesAcceptPopup from "@/bik-lib/features/cookie/CookiesAcceptPopup";
 import AppProvider from "@/bik-lib/context/AppProvider";
 import ComposeProviders from "@/bik-lib/lib/ComposeProviders";
 import { TooltipProvider } from "@/bikiran/components/ui/tooltip";
+import FixedHeaderControl from "@/bikiran/shared/header/FixedHeaderControl";
+import HeaderSection from "@/bikiran/shared/header/HeaderSection";
 
 type RootLayoutProps = {
   children: ReactNode;
@@ -20,6 +22,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         TooltipProvider,
       ]}
     >
+      {/* <HeaderSection /> */}
       <main> {children}</main>
 
       {/* Accept Cookies */}
