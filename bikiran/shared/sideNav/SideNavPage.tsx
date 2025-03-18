@@ -5,10 +5,16 @@ import React, { useState } from "react";
 import { NavItem } from "./NavMenuTypes";
 import SideNavSubMenu from "./SideNavSubMenu";
 import Link from "next/link";
+import { usePathname, useSearchParams } from "next/navigation";
 
 const SideNavPage = () => {
   const [activeNavId, setActiveNavId] = useState<string | null>(null);
   const [activeSubMenuId, setActiveSubMenuId] = useState<string | null>(null);
+
+  const pathname = usePathname();
+
+  const currentPage = pathname.split("/") || "";
+  const userPart = currentPage[1];
 
   // initially active nav and submenu
   // const [activeNavId, setActiveNavId] = useState(menuArray[0].id || null);
@@ -17,9 +23,10 @@ const SideNavPage = () => {
   // );
 
   const handleNavClick = (id: string) => {
+  
     setActiveNavId(activeNavId === id ? null : id);
     // when nav is active submenu is also active
-    setActiveSubMenuId(activeSubMenuId === id ? null : id);
+    // setActiveSubMenuId(activeSubMenuId === id ? null : id);
   };
 
   const handleSubMenuClick = (id: string) => {
@@ -35,35 +42,35 @@ const SideNavPage = () => {
 
       {menuArray.map((item: NavItem) => (
         <ul key={item.id} className="px-2.5 pt-4">
-          <Link href={item.id}>
-            <li
-              onClick={() => handleNavClick(item.id)}
-              className={`relative z-10 group flex gap-2.5 p-2 cursor-pointer ${activeNavId === item.id ? "bg-slate-900" : ""}`}
-            >
-              <div className="flex gap-2.5 ">
-                <div className=" w-[26px] ">
-                  <Image
-                    src={item.iconLine}
-                    alt="alt"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-full h-auto opacity-100 group-hover:opacity-0 transition-all duration-500"
-                  />
-                  <Image
-                    src={item.iconFill}
-                    alt="alt"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className={`w-[26px] absolute top-2  ${activeNavId === item.id ? "opacity-100" : "opacity-0"} 
+          {/* <Link href={item.id}> */}
+          <li
+            onClick={() => handleNavClick(item.id)}
+            className={`relative z-10 group flex gap-2.5 p-2 cursor-pointer ${activeNavId === item.id ? "bg-slate-900" : ""}`}
+          >
+            <div className="flex gap-2.5 ">
+              <div className=" w-[26px] ">
+                <Image
+                  src={item.iconLine}
+                  alt="alt"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-auto opacity-100 group-hover:opacity-0 transition-all duration-500"
+                />
+                <Image
+                  src={item.iconFill}
+                  alt="alt"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className={`w-[26px] absolute top-2 ${userPart === item.id ? "opacity-100" : "opacity-0"} 
                   group-hover:opacity-100 transition-all duration-300`}
-                  />
-                </div>
-                <h2>{item.title}</h2>
+                />
               </div>
-            </li>
-          </Link>
+              <h2>{item.title}</h2>
+            </div>
+          </li>
+          {/* </Link> */}
 
           {/* Submenu */}
           <SideNavSubMenu
