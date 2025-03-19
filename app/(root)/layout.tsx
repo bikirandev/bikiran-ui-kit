@@ -23,9 +23,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
         TooltipProvider,
       ]}
     >
-      {/* <HeaderSection /> */}
       <main>
         <SideNavPage />
+        <HeaderSection />
+
         <div className="ml-[230px]">{children}</div>
       </main>
 

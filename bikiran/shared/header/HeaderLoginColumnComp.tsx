@@ -22,14 +22,14 @@ const HeaderLoginColumnComp: FC = ({}) => {
       <li className="-mx-1">
         <HeaderServiceBtnComp />
       </li>
-      <li>
+      {/* <li>
         <ProfileManage
           authFn={useAuth2}
           AuthCompWrapper={AuthCompWrapper}
           ImageComponent={Image}
           LinkComponent={Link}
         />
-      </li>
+      </li> */}
     </ul>
   );
 };

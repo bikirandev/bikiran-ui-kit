@@ -4,8 +4,8 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { NavItem } from "./NavMenuTypes";
 import SideNavSubMenu from "./SideNavSubMenu";
-import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
+import menuIcon from "./icons/icon-menu.svg";
 
 const SideNavPage = () => {
   const [activeNavId, setActiveNavId] = useState<string | null>(null);
@@ -23,7 +23,6 @@ const SideNavPage = () => {
   // );
 
   const handleNavClick = (id: string) => {
-  
     setActiveNavId(activeNavId === id ? null : id);
     // when nav is active submenu is also active
     // setActiveSubMenuId(activeSubMenuId === id ? null : id);
@@ -35,6 +34,7 @@ const SideNavPage = () => {
       return prev === id ? null : id;
     });
   };
+  const handleToggle = () => {};
 
   return (
     <div className="w-[230px] fixed h-screen bg-[#07090B] text-primary-100  overflow-y-auto scrollbar-hidden">

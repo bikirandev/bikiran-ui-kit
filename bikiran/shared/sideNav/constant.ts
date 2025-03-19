@@ -67,7 +67,7 @@ export const menuArray: NavItem[] = [
             iconF: icons.iconSubmenuInvoiceFill,
           },
           {
-            id: "/domain/delete-domain",
+            id: "/domain/delete-domain-list",
             title: "Delete Domain",
             iconL: icons.iconSubmenuDeleted,
             iconF: icons.iconSubmenuDeletedFill,

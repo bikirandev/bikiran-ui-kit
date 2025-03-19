@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 
 const SideNavSubMenu = ({
   activeNavId,
@@ -10,16 +10,16 @@ const SideNavSubMenu = ({
   handleSubMenuClick,
 }: any) => {
   const pathname = usePathname();
-  // const active = pathname === activeSubMenuId;
+  const activePath = pathname;
 
   const currentPage = pathname.split("/") || "";
   const userPart = currentPage[1];
-  console.log(activeNavId);
+  console.log(activePath);
 
   return (
     <div
       className={`overflow-hidden  ${
-        activeNavId === item.id
+        activeNavId === item.id || activePath === item.id
           ? "max-h-[1000px] opacity-100 transition-all duration-1000"
           : "max-h-0 transition-all duration-300"
       }`}

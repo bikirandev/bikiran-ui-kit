@@ -3,7 +3,7 @@ import { FC } from "react";
 const P: FC = () => {
   return (
     <div>
-      <h2>Domain Package</h2>
+      <h2>User Email</h2>
     </div>
   );
 };
