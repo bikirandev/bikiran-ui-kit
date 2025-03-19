@@ -75,7 +75,7 @@ export const menuArray: NavItem[] = [
         ]
     },
     {
-        id: "/hosting",
+        id: "hosting",
         miniTitle: "hosting",
         title: "Hosting",
         iconLine: icons.iconSidebarHosting,
@@ -102,7 +102,7 @@ export const menuArray: NavItem[] = [
         ]
     },
     {
-        id: "/appOcean",
+        id: "appOcean",
         miniTitle: "appOcean",
         title: "AppOcean",
         iconLine: icons.iconSidebarSupport,
@@ -154,7 +154,7 @@ export const menuArray: NavItem[] = [
         ]
     },
     {
-        id: "/billing",
+        id: "billing",
         miniTitle: "billing",
         title: "Billings",
         iconLine: icons.iconSidebarBilling,
@@ -187,7 +187,7 @@ export const menuArray: NavItem[] = [
         ]
     },
     {
-        id: "/manage",
+        id: "manage",
         miniTitle: "manage",
         title: "Manage",
         iconLine: icons.iconSidebarManage,
@@ -238,7 +238,7 @@ export const menuArray: NavItem[] = [
         ]
     },
     {
-        id: "/support",
+        id: "support",
         miniTitle: "support",
         title: "Support",
         iconLine: icons.iconSidebarSupport,
@@ -254,7 +254,7 @@ export const menuArray: NavItem[] = [
         ]
     },
     {
-        id: "/logs",
+        id: "logs",
         miniTitle: "logs",
         title: "Logs",
         iconLine: icons.iconSidebarLog,
@@ -293,7 +293,7 @@ export const menuArray: NavItem[] = [
         ]
     },
     {
-        id: "/emailNotification",
+        id: "emailNotification",
         miniTitle: "emailNotification",
         title: "Email Notification",
         iconLine: icons.iconSidebarEmailNotification,

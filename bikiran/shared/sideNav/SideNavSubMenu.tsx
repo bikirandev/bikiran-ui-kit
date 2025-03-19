@@ -14,13 +14,14 @@ const SideNavSubMenu = ({
 
   const currentPage = pathname.split("/") || "";
   const userPart = currentPage[1];
+  console.log(activeNavId);
 
   return (
     <div
       className={`overflow-hidden  ${
-        activeNavId === item.id || userPart === item.id
+        activeNavId === item.id
           ? "max-h-[1000px] opacity-100 transition-all duration-1000"
-          : "max-h-0  transition-all duration-300"
+          : "max-h-0 transition-all duration-300"
       }`}
     >
       <ul className="mt-2 ml-5 border-0">
