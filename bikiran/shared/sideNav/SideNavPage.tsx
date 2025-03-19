@@ -5,7 +5,6 @@ import React, { useState } from "react";
 import { NavItem } from "./NavMenuTypes";
 import SideNavSubMenu from "./SideNavSubMenu";
 import { usePathname, useSearchParams } from "next/navigation";
-import menuIcon from "./icons/icon-menu.svg";
 
 const SideNavPage = () => {
   const [activeNavId, setActiveNavId] = useState<string | null>(null);
@@ -74,6 +73,7 @@ const SideNavPage = () => {
 
           {/* Submenu */}
           <SideNavSubMenu
+            setActiveNavId={setActiveNavId}
             activeNavId={activeNavId}
             item={item}
             handleSubMenuClick={handleSubMenuClick}

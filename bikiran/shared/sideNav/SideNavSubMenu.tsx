@@ -1,27 +1,40 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { use, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 
 const SideNavSubMenu = ({
+  setActiveNavId,
   activeNavId,
   item,
   activeSubMenuId,
   handleSubMenuClick,
 }: any) => {
   const pathname = usePathname();
-  const activePath = pathname;
 
-  const currentPage = pathname.split("/") || "";
-  const userPart = currentPage[1];
-  console.log(activePath);
+  // map all the subMenus id
+  const activePaths = item?.subMenu?.map((subItem: any) => subItem.id);
+
+  // console.log(
+  //   activeNavId === item?.id && activePaths.indexOf(pathname) !== -1
+  // );
+
+  // every path change a useEffect will run, if path subitem id na hoi then set activeNavId null, when null then expand will close
+  useEffect(() => {
+    if (activePaths?.indexOf(pathname) === -1) {
+      setActiveNavId(null);
+    }
+  }, [pathname]);
+
+  const isCollapse =
+    activeNavId === item?.id || activePaths?.indexOf(pathname) !== -1;
 
   return (
     <div
-      className={`overflow-hidden  ${
-        activeNavId === item.id || activePath === item.id
+      className={`overflow-hidden ${
+        isCollapse
           ? "max-h-[1000px] opacity-100 transition-all duration-1000"
-          : "max-h-0 transition-all duration-300"
+          : "max-h-0 opacity-0 transition-all duration-300"
       }`}
     >
       <ul className="mt-2 ml-5 border-0">
