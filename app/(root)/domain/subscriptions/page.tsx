@@ -1,12 +1,11 @@
-import UserPage from "@/bikiran/components/user/UserPage";
+import ListUser from "@/bikiran/components/user/ListUser";
 import { FC } from "react";
 
 const P: FC = () => {
   return (
     <>
-      {/* <UserPage /> */}
       <div>
-        <h2>Domain Subscription</h2>
+        <ListUser />
       </div>
     </>
   );
