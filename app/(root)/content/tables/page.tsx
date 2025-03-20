@@ -1,10 +1,10 @@
-import ListUser from "@/bikiran/components/user/ListUser";
+import TablePage from "@/bikiran/components/content/tables/TablePage";
 import { FC } from "react";
 
 const P: FC = () => {
   return (
     <div>
-      <ListUser />
+      <TablePage />
     </div>
   );
 };

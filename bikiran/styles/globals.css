@@ -123,7 +123,7 @@
 
   .custom-scrollbar::-webkit-scrollbar-thumb,
   body::-webkit-scrollbar-thumb {
-    @apply bg-secondary rounded-5;
+    @apply bg-slate-800 rounded-5;
   }
 
   .no-scrollbar::-webkit-scrollbar {
@@ -144,30 +144,30 @@ table.table-container thead {
   @apply bg-primary-100 hover:!bg-primary-100 overflow-hidden;
 }
 table.table-container th {
-  @apply px-2 py-2 font-medium text-[13px] relative;
+  @apply px-1 py-2 font-medium text-[13px] relative;
 }
-table.table-container th::after {
+/* table.table-container th::after {
   content: "";
   @apply w-[1px] h-1/2 absolute top-1/2 right-0 transform -translate-y-1/2 bg-primary-300;
 }
 table.table-container th:last-child::after {
   @apply hidden;
-}
-table.table-container th:first-child {
+} */
+/* table.table-container th:first-child {
   @apply rounded-tl-8 rounded-bl-8 text-start;
 }
 table.table-container th:last-child {
   @apply rounded-tr-8 rounded-br-8 text-end;
-}
+} */
 table.table-container tr {
-  @apply transition-colors hover:bg-muted/50 even:bg-primary-50;
+  /* @apply transition-colors hover:bg-muted/50 even:bg-primary-50; */
 }
 
 table.table-container tbody tr {
-  @apply 2xl:h-[60px] h-[50px];
+  @apply 2xl:h-[50px] h-[40px];
 }
 table.table-container td {
-  @apply px-2  font-normal text-[13px];
+  @apply px-2 font-normal text-[13px];
 }
 
 table.table-container tr.not-found {

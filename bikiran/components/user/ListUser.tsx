@@ -4,7 +4,7 @@ import { userData } from "./constant";
 const ListUser = () => {
   return (
     <div className="container">
-      <h2 className="text-primary text-2xl font-medium mt-2">List of user</h2>
+      <h2 className="text-primary text-2xl font-medium mt-5 mb-2">List of user</h2>
       <table
         cellPadding={0}
         cellSpacing={0}

@@ -22,7 +22,7 @@ table.table-container th:last-child {
   @apply rounded-tr-8 rounded-br-8 text-end;
 }
 table.table-container tr {
-  @apply transition-colors hover:bg-muted/50 even:bg-primary-50;
+  /* @apply transition-colors hover:bg-muted/50 even:bg-primary-50; */
 }
 table.table-container td {
   @apply px-2 py-2 font-normal text-[13px] 2xl:text-sm;

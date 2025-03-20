@@ -11,9 +11,13 @@ const SideNavSubMenu = ({
   handleSubMenuClick,
 }: any) => {
   const pathname = usePathname();
+  const currentPage = pathname.split("/") || "";
+  const userPart = currentPage[1];
 
   // map all the subMenus id
   const activePaths = item?.subMenu?.map((subItem: any) => subItem.id);
+
+  console.log(activeSubMenuId);
 
   // console.log(
   //   activeNavId === item?.id && activePaths.indexOf(pathname) !== -1
@@ -26,13 +30,18 @@ const SideNavSubMenu = ({
     }
   }, [pathname]);
 
-  const isCollapse =
-    activeNavId === item?.id || activePaths?.indexOf(pathname) !== -1;
+  const data = activePaths.indexOf(pathname) !== -1;
+
+  const isExpand =
+    activeNavId === item?.id ||
+    // pathname === activeSubMenuId ||
+
+    activePaths?.indexOf(pathname) !== -1;
 
   return (
     <div
       className={`overflow-hidden ${
-        isCollapse
+        isExpand
           ? "max-h-[1000px] opacity-100 transition-all duration-1000"
           : "max-h-0 opacity-0 transition-all duration-300"
       }`}

@@ -75,6 +75,39 @@ export const menuArray: NavItem[] = [
         ]
     },
     {
+      id: "content",
+      miniTitle: "content",
+      title: "Content",
+      iconLine: icons.iconSidebarDomain,
+      iconFill: icons.iconSidebarDomainFill,
+      subMenu: [
+        {
+          id: "/content/reboot",
+          title: "Reboot",
+          iconL: icons.iconSubmenuPricing,
+          iconF: icons.iconSubmenuPricingFill,
+        },
+        {
+          id: "/content/typography",
+          title: "Typography",
+          iconL: icons.iconSubmenuInvoice,
+          iconF: icons.iconSubmenuInvoiceFill,
+        },
+        {
+          id: "/content/tables",
+          title: "Tables",
+          iconL: icons.iconSubmenuDeleted,
+          iconF: icons.iconSubmenuDeletedFill,
+        },
+        {
+          id: "/content/images",
+          title: "Images",
+          iconL: icons.iconSubmenuDeleted,
+          iconF: icons.iconSubmenuDeletedFill,
+        },
+      ]
+  },
+    {
         id: "hosting",
         miniTitle: "hosting",
         title: "Hosting",

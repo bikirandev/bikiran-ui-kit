@@ -27,7 +27,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <SideNavPage />
         <HeaderSection />
 
-        <div className="ml-[230px]">{children}</div>
+        <div className="ml-[230px] overflow-scroll custom-scrollbar h-screen">{children}</div>
       </main>
 
       {/* Accept Cookies */}
