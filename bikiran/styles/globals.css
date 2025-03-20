@@ -141,10 +141,12 @@ table.table-container {
   @apply w-full;
 }
 table.table-container thead {
-  @apply bg-primary-100 hover:!bg-primary-100 overflow-hidden;
+  /* @apply bg-primary-100 hover:!bg-primary-100 overflow-hidden; */
+  /* @apply bg-primary-100 hover:!bg-primary-100 overflow-hidden; */
+
 }
 table.table-container th {
-  @apply px-1 py-2 font-medium text-[13px] relative;
+  @apply px-1 py-4 font-medium text-[13px] relative;
 }
 /* table.table-container th::after {
   content: "";

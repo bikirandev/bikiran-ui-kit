@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { overviewData } from "./constant";
 
@@ -5,12 +6,27 @@ const OverviewComp = () => {
   return (
     <div>
       <h2 className="font-medium text-5xl">Tables</h2>
+
       <p className="font-normal text-lg mt-3 text-primary-700">
         Documentation and examples for opt-in styling of tables (given their
         prevalent use in JavaScript plugins) with Bootstrap.
       </p>
 
-      <h2 className="font-medium text-3xl mt-5">Overview</h2>
+      <div className="flex justify-between items-center  mt-10">
+        <h2 className="font-medium text-3xl mt-5">Overview</h2>
+
+        <button
+          className="border px-2 py-1 text-sm hover:border-blue-600 rounded-5"
+          onClick={() =>
+            window.open(
+              "https://www.npmjs.com/package/bik-button?activeTab=readme"
+            )
+          }
+        >
+          View on Github
+        </button>
+      </div>
+
       <p className="font-normal text-base mt-3 text-primary-700 text-justify">
         Due to the widespread use of elements across third-party widgets like
         calendars and date pickers, Bootstrap’s tables are opt-in. Add the base

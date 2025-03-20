@@ -75,36 +75,37 @@ export const menuArray: NavItem[] = [
         ]
     },
     {
-      id: "content",
-      miniTitle: "content",
-      title: "Content",
-      iconLine: icons.iconSidebarDomain,
-      iconFill: icons.iconSidebarDomainFill,
+      id: "component",
+      miniTitle: "component",
+      title: "Component",
+      iconLine: icons.iconSidebarBilling,
+      iconFill: icons.iconSidebarBillingFill,
       subMenu: [
         {
-          id: "/content/reboot",
+          id: "/component/reboot",
           title: "Reboot",
           iconL: icons.iconSubmenuPricing,
           iconF: icons.iconSubmenuPricingFill,
         },
         {
-          id: "/content/typography",
+          id: "/component/typography",
           title: "Typography",
           iconL: icons.iconSubmenuInvoice,
           iconF: icons.iconSubmenuInvoiceFill,
         },
         {
-          id: "/content/tables",
+          id: "/component/tables",
           title: "Tables",
           iconL: icons.iconSubmenuDeleted,
           iconF: icons.iconSubmenuDeletedFill,
         },
         {
-          id: "/content/images",
-          title: "Images",
+          id: "/component/buttons",
+          title: "Buttons",
           iconL: icons.iconSubmenuDeleted,
           iconF: icons.iconSubmenuDeletedFill,
         },
+       
       ]
   },
     {

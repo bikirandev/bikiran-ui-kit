@@ -1,10 +1,3 @@
-
-export const overviewData = [
-    { id: 1, firstName: 'John', lastName: 'Doe', handle: '@johndoe' },
-    { id: 2, firstName: 'Jane', lastName: 'Smith', handle: '@janesmith' },
-    { id: 3, firstName: 'Alice', lastName: 'Johnson', handle: '@alicejohnson' },
-];
-
 export type Variant = {
     id: number;
     class: string;
@@ -12,13 +5,49 @@ export type Variant = {
     heading2: string;
 };
 
-export const variantData: Variant[] = [
-    { id: 1, class: 'Default', heading1: 'Cell', heading2: 'Cell' },
-    { id: 2, class: 'Primary', heading1: 'Cell', heading2: 'Cell' }, 
-    { id: 3, class: 'Secondary', heading1: 'Cell', heading2: 'Cell' },    
-    { id: 4, class: 'Success', heading1: 'Cell', heading2: 'Cell' },
-    { id: 6, class: 'Info', heading1: 'Cell', heading2: 'Cell' },
-    { id: 7, class: 'Warning', heading1: 'Cell', heading2: 'Cell' },
-    { id: 8, class: 'Light', heading1: 'Cell', heading2: 'Cell' }, 
+export const overviewData = [
+    { id: 1, firstName: 'John', lastName: 'Doe', handle: '@johndoe' },
+    { id: 2, firstName: 'Jane', lastName: 'Smith', handle: '@janesmith' },
+    { id: 3, firstName: 'Alice', lastName: 'Johnson', handle: '@alicejohnson' },
+];
+
+type VariantClass =
+  | 'default'
+  | 'primary'
+  | 'secondary'
+  | 'success'
+  | 'danger'
+  | 'info'
+  | 'warning'
+  | 'light'
+  | 'dark';
+
+type VariantItem = {
+    id: number;
+    class: VariantClass;
+    heading1: string;
+    heading2: string;
+  };
+  
+export const bgColorMap: { [key in VariantClass]: string } = {
+    default: "bg-white",
+    primary: "bg-[var(--primary)]", // Custom indigo color
+    secondary: "bg-[var(--secondary)]", // Custom gray color
+    success: "bg-[#00b15b]", // Custom green color
+    danger: "bg-[#ffa113]", // Custom red color
+    info: "bg-[#CFF4FC]", // Custom blue color
+    warning: "bg-[#ffa113]", // Custom yellow color
+    light: "bg-[#F3F4F6]", // Custom light gray color
+    dark: "bg-[#1F2937]", // Custom dark gray color
+  };
+
+export const variantData: VariantItem[] = [
+    { id: 1, class: 'default', heading1: 'Cell', heading2: 'Cell' },
+    { id: 2, class: 'primary', heading1: 'Cell', heading2: 'Cell' }, 
+    { id: 3, class: 'secondary', heading1: 'Cell', heading2: 'Cell' },    
+    { id: 6, class: 'info', heading1: 'Cell', heading2: 'Cell' },
+    { id: 7, class: 'warning', heading1: 'Cell', heading2: 'Cell' },
+    { id: 4, class: 'success', heading1: 'Cell', heading2: 'Cell' },
+    { id: 8, class: 'light', heading1: 'Cell', heading2: 'Cell' }, 
 ];
 
