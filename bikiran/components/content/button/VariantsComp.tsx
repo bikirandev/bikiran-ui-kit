@@ -47,42 +47,42 @@ const VariantsComp = () => {
         <div className="mt-10 ml-10">
           <tr className="">
             <code>
-              <span className="text-red-600">{'<button'}</span> {`className="bg-light-red px-3 py-1 rounded-5">`}
+              <span className="text-red-600">{'<button'}</span> {`className="bg-primary px-3 py-1 rounded-5">`}
               <span className="text-red-500 font-bold">Primary</span>
               {`</button>`}
             </code>
           </tr>
           <tr className="">
             <code>
-              <span className="text-red-600">{'<button'}</span> {`className="bg-light-red px-3 py-1 rounded-5">`}
+              <span className="text-red-600">{'<button'}</span> {`className="bg-secondary px-3 py-1 rounded-5">`}
               <span className="text-red-500 font-bold">Secondary</span>
               {`</button>`}
             </code>
           </tr>
           <tr className="">
             <code>
-              <span className="text-red-600">{'<button'}</span> {`className="bg-light-red px-3 py-1 rounded-5">`}
+              <span className="text-red-600">{'<button'}</span> {`className="bg-success px-3 py-1 rounded-5">`}
               <span className="text-red-500 font-bold">Success</span>
               {`</button>`}
             </code>
           </tr>
           <tr className="">
             <code>
-              <span className="text-red-600">{'<button'}</span> {`className="bg-light-red px-3 py-1 rounded-5">`}
+              <span className="text-red-600">{'<button'}</span> {`className="bg-error px-3 py-1 rounded-5">`}
               <span className="text-red-500 font-bold">Danger</span>
               {`</button>`}
             </code>
           </tr>
           <tr className="">
             <code>
-              <span className="text-red-600">{'<button'}</span> {`className="bg-light-red px-3 py-1 rounded-5">`}
+              <span className="text-red-600">{'<button'}</span> {`className="bg-warning px-3 py-1 rounded-5">`}
               <span className="text-red-500 font-bold">Warning</span>
               {`</button>`}
             </code>
           </tr>
           <tr className="">
             <code>
-              <span className="text-red-600">{'<button'}</span> {`className="bg-light-red px-3 py-1 rounded-5">`}
+              <span className="text-red-600">{'<button'}</span> {`className="bg-light px-3 py-1 rounded-5">`}
               <span className="text-red-500 font-bold">Light</span>
               {`</button>`}
             </code>
