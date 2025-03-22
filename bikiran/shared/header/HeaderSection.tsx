@@ -1,4 +1,3 @@
-"use client";
 import { FC } from "react";
 import { headerIcons } from "./icons/icons";
 import Link from "next/link";
@@ -24,19 +23,24 @@ export const CompLogo: FC = () => {
   );
 };
 
-const HeaderSection: FC<{
+interface HeaderSectionProps {
+  onToggleMenu: () => void;
   className?: string;
-}> = ({ className }) => {
+}
+
+const HeaderSection: React.FC<HeaderSectionProps> = ({className, onToggleMenu })=> {
   return (
     <FixedHeaderControl>
-      <header className={`header_container ${className}`}>
-        <div className="flex h-full items-center justify-between">
+      <header className={` header_container ${className}`}>
+        <div className="flex h-full items-center justify-between ">
           <div className="flex items-center gap-3 h-full">
-            {/* <HeaderToggleMenuComp /> */}
+            {/* Toggle button only on mobile */}
+            <button onClick={onToggleMenu} className="block md:hidden text-2xl">
+              ☰
+            </button>
+            
             <CompLogo />
           </div>
-
-          {/* <HeaderMenuColumnComp setSelectedMenu={setSelectedMenu} /> */}
 
           <div className="w-[200px] xl:w-[350px]">
             <HeaderLoginColumnComp />

@@ -8,7 +8,6 @@ type TFixedHeaderControl = {
 
 const FixedHeaderControl: React.FC<TFixedHeaderControl> = ({ children }) => {
   const ref = useRef<HTMLDivElement>(null);
-  // const { windowWidth } = useLayout();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,10 +25,10 @@ const FixedHeaderControl: React.FC<TFixedHeaderControl> = ({ children }) => {
 
   return (
     <>
-      <div className="web-header" ref={ref}>
+      <div className="" ref={ref}>
         {children}
       </div>
-      <div className="web-header-gap" />
+      <div className="" />
     </>
   );
 };

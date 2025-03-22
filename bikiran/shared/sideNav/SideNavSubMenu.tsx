@@ -9,6 +9,7 @@ const SideNavSubMenu = ({
   item,
   activeSubMenuId,
   handleSubMenuClick,
+  handleClose
 }: any) => {
   const pathname = usePathname();
   const currentPage = pathname.split("/") || "";
@@ -17,7 +18,7 @@ const SideNavSubMenu = ({
   // map all the subMenus id
   const activePaths = item?.subMenu?.map((subItem: any) => subItem.id);
 
-  console.log(activeSubMenuId);
+  // console.log(activeSubMenuId);
 
   // console.log(
   //   activeNavId === item?.id && activePaths.indexOf(pathname) !== -1
@@ -50,7 +51,10 @@ const SideNavSubMenu = ({
         {item.subMenu?.map((subItem: any, index: any) => (
           <li
             key={index}
-            onClick={() => handleSubMenuClick(subItem.id)}
+            onClick={() => {
+              handleSubMenuClick(subItem.id)
+              handleClose()
+            }}
             className="relative group cursor-pointer pl-[17px] text-gray-300"
           >
             <Link href={subItem.id}>

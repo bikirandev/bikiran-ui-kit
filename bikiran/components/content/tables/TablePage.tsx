@@ -4,9 +4,11 @@ import VariantsComp from "./VariantsComp";
 
 const TablePage = () => {
   return (
-    <div className="pt-[45px] px-[65px] mb-[100px]">
-      <OverviewComp />
-      <VariantsComp />
+    <div className="container">
+      <div className="pt-11 mb-[100px]">
+        <OverviewComp />
+        <VariantsComp />
+      </div>
     </div>
   );
 };

@@ -1,3 +1,13 @@
+/*  */
+.sidebar_menu_wrapper {
+  @apply fixed top-0 -left-full z-[60] size-full bg-[#20202082] transition-all duration-300;
+}
+
+.sidebar_menu_wrapper.active {
+  @apply left-0;
+}
+
+/*  */
 .header_container {
   @apply  w-full h-[50px] bg-white px-5 border-b border-[#e8e7ec] print:hidden;
 }
