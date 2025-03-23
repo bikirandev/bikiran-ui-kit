@@ -19,8 +19,8 @@ type VariantClass =
   | 'danger'
   | 'info'
   | 'warning'
-  | 'light'
-  | 'dark';
+  | 'dark'
+  | 'error' 
 
 type VariantItem = {
     id: number;
@@ -30,15 +30,24 @@ type VariantItem = {
   };
   
 export const bgColorMap: { [key in VariantClass]: string } = {
-    default: "bg-white",
+    // default: "bg-white",
+    // primary: "bg-[var(--primary)]", // Custom indigo color
+    // secondary: "bg-[var(--secondary)]", // Custom gray color
+    // success: "bg-[#00b15b]", // Custom green color
+    // danger: "bg-[#ffa113]", // Custom red color
+    // info: "bg-[#CFF4FC]", // Custom blue color
+    // warning: "bg-[#ffa113]", // Custom yellow color
+    // light: "bg-[#F3F4F6]", // Custom light gray color
+    // dark: "bg-[#1F2937]", // Custom dark gray color
+    default: "bg-[var(--white-100)]",
     primary: "bg-[var(--primary)]", // Custom indigo color
-    secondary: "bg-[var(--secondary)]", // Custom gray color
+    secondary: "bg-[var(--secondary)]", // Custom gray color  
+    info: "bg-[#CFF4FC]", // Custom blue color
+    warning: "bg-[#ffa113]", // Custom yellow color 
     success: "bg-[#00b15b]", // Custom green color
     danger: "bg-[#ffa113]", // Custom red color
-    info: "bg-[#CFF4FC]", // Custom blue color
-    warning: "bg-[#ffa113]", // Custom yellow color
-    light: "bg-[#F3F4F6]", // Custom light gray color
     dark: "bg-[#1F2937]", // Custom dark gray color
+    error: "bg-[var(--error)]", // Custom red color
   };
 
 export const variantData: VariantItem[] = [
@@ -48,6 +57,7 @@ export const variantData: VariantItem[] = [
     { id: 6, class: 'info', heading1: 'Cell', heading2: 'Cell' },
     { id: 7, class: 'warning', heading1: 'Cell', heading2: 'Cell' },
     { id: 4, class: 'success', heading1: 'Cell', heading2: 'Cell' },
-    { id: 8, class: 'light', heading1: 'Cell', heading2: 'Cell' }, 
+    { id: 8, class: 'error', heading1: 'Cell', heading2: 'Cell' }, 
+
 ];
 

@@ -142,19 +142,18 @@ table.table-container {
 }
 table.table-container thead {
   /* @apply bg-primary-100 hover:!bg-primary-100 overflow-hidden; */
-  /* @apply bg-primary-100 hover:!bg-primary-100 overflow-hidden; */
 
 }
 table.table-container th {
-  @apply px-1 py-4 font-medium text-[13px] relative;
+  /* @apply px-1 py-4 font-medium text-[13px] relative; */
 }
-/* table.table-container th::after {
+table.table-container th::after {
   content: "";
   @apply w-[1px] h-1/2 absolute top-1/2 right-0 transform -translate-y-1/2 bg-primary-300;
 }
 table.table-container th:last-child::after {
   @apply hidden;
-} */
+}
 /* table.table-container th:first-child {
   @apply rounded-tl-8 rounded-bl-8 text-start;
 }

@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { overviewData } from "./constant";
 
 const OverviewComp = () => {
@@ -39,30 +38,31 @@ const OverviewComp = () => {
         in Bootstrap.
       </p>
 
-      <table className="table-container border rounded-15 mt-4 ">
-        <thead>
-          <tr>
-            <th className="!text-center w-[20px]">#</th>
-            <th className="text-center w-[100px]">Fast</th>
-            <th className="text-center w-[100px]">Last</th>
-            <th className="text-center w-[100px]">Handle</th>
-            <th className="text-center w-[100px]">Handle</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {/*  */}
-          {overviewData.map((user, index) => (
-            <tr key={index} className="border-b border-gray-200 ">
-              <td className="!text-center">{user.id}</td>
-              <td className="text-center">{user.firstName}</td>
-              <td className="text-center">{user.lastName}</td>
-              <td className="text-center">{user.handle}</td>
-              <td className="text-center">{user.handle}</td>
+      <div className="overflow-x-auto border mt-4 md:p-5 rounded-10">
+        <table className="table-container w-full">
+          <thead>
+            <tr>
+              <th className="!text-center w-[50px]">#</th>
+              <th className="text-center w-[150px]">Fast</th>
+              <th className="text-center w-[150px]">Last</th>
+              <th className="text-center w-[150px]">Handle</th>
+              <th className="text-center w-[150px]">Handle</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+
+          <tbody>
+            {overviewData.map((user, index) => (
+              <tr key={index} className="border-b border-gray-200">
+                <td className="!text-center">{user.id}</td>
+                <td className="text-center">{user.firstName}</td>
+                <td className="text-center">{user.lastName}</td>
+                <td className="text-center">{user.handle}</td>
+                <td className="text-center">{user.handle}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };

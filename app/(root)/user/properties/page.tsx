@@ -4,9 +4,7 @@ import { FC } from "react";
 const P: FC = () => {
   return (
     <>
-      <div>
-        <ListUser />
-      </div>
+      <ListUser />
     </>
   );
 };
