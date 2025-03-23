@@ -31,7 +31,7 @@ interface HeaderSectionProps {
 const HeaderSection: React.FC<HeaderSectionProps> = ({className, onToggleMenu })=> {
   return (
     <FixedHeaderControl>
-      <header className={` header_container ${className}`}>
+      <header className={`header_container ${className} `} >
         <div className="flex h-full items-center justify-between ">
           <div className="flex items-center gap-3 h-full">
             {/* Toggle button only on mobile */}

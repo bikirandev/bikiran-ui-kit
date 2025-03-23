@@ -22,10 +22,9 @@ const SideNavPage = () => {
         <MobileNav isMenuOpen={isMenuOpen} handleClose={handleClose} />
       </div>
 
-      <HeaderSection
-        className="md:ml-[230px]"
-        onToggleMenu={() => setIsMenuOpen(!isMenuOpen)}
-      />
+      <div className="md:ml-[230px]">
+        <HeaderSection onToggleMenu={() => setIsMenuOpen(!isMenuOpen)} />
+      </div>
     </div>
   );
 };
