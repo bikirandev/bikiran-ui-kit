@@ -34,7 +34,7 @@ const DefaultButtonComp = () => {
         <div className="border border-[#FFFFFF]/10 mt-5 rounded-15 ">
           <div className="flex justify-between bg-[#1F1E25] border-b rounded-t-15 border-[#FFFFFF]/10 px-5 py-3 ">
             <p>HTML</p>
-            <button>Copy</button>
+            <button className="border border-[#12C55C] px-2.5 py-1 rounded-8 hover:bg-[#12C55C]">Copy</button>
           </div>
           <div className="px-5 py-3">
             <p className="text-sm mb-3">-- Default Buttons --</p>
@@ -52,6 +52,11 @@ const DefaultButtonComp = () => {
             ))}
           </div>
         </div>
+
+        <div className="bg-[#FFDC5D]/5 rounded-10 px-5 py-4 mt-6 border-l-2 border-[#FFDC5D]">
+            <p className="text-base">If you are using the .btn class on its own, remember to at least define some explicit :focus and/or :focus-visible styles.</p>
+        </div>
+        
       </div>
     </section>
   );
