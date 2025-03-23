@@ -34,7 +34,9 @@ const DefaultButtonComp = () => {
         <div className="border border-[#FFFFFF]/10 mt-5 rounded-15 ">
           <div className="flex justify-between bg-[#1F1E25] border-b rounded-t-15 border-[#FFFFFF]/10 px-5 py-3 ">
             <p>HTML</p>
-            <button className="border border-[#12C55C] px-2.5 py-1 rounded-8 hover:bg-[#12C55C]">Copy</button>
+            <button className="border border-[#12C55C] px-2.5 py-1 rounded-8 hover:bg-[#12C55C]">
+              Copy
+            </button>
           </div>
           <div className="px-5 py-3">
             <p className="text-sm mb-3">-- Default Buttons --</p>
@@ -42,9 +44,14 @@ const DefaultButtonComp = () => {
               <ul key={item.id} className="pt-1">
                 <code>
                   <span className="text-[#5DFFD9]">{"<button"}</span>{" "}
-                  <span className="text-[#14B9FF]">{`type="button"`}</span>{" "}
-                  <span className="text-[#FF7E7E]">{`className="${item.class} "`}</span>
-                  <span className="text-[#5DFFD9]">{">"}</span>
+                  <span className="text-[#14B9FF]">{`type`}</span>
+                  <span className="text-[#5DFFD9]">{`="`}</span>
+                  <span className="text-[#FF7E7E]">{`button`}</span>
+                  <span className="text-[#5DFFD9]">{`"`}</span>{" "}
+                  <span className="text-[#14B9FF]">{`className`}</span>
+                  <span className="text-[#5DFFD9]">{`="`}</span>
+                  <span className="text-[#FF7E7E]">{`${item.class}`}</span>
+                  <span className="text-[#5DFFD9]">{`">`}</span>
                   <span className=" font-bold">Light</span>
                   <span className="text-[#5DFFD9]">{"</button>"}</span>
                 </code>
@@ -54,9 +61,11 @@ const DefaultButtonComp = () => {
         </div>
 
         <div className="bg-[#FFDC5D]/5 rounded-10 px-5 py-4 mt-6 border-l-2 border-[#FFDC5D]">
-            <p className="text-base">If you are using the .btn class on its own, remember to at least define some explicit :focus and/or :focus-visible styles.</p>
+          <p className="text-base">
+            If you are using the .btn class on its own, remember to at least
+            define some explicit :focus and/or :focus-visible styles.
+          </p>
         </div>
-        
       </div>
     </section>
   );
