@@ -1,62 +1,189 @@
+    // export const buttonVariants = [
+    //     {
+    //         id: 1,
+    //         class: "var(--secondary)",
+    //         title: "Primary"
+    //     },
+    //     {
+    //         id: 2,
+    //         class: "var(--primary-700)",
+    //         title: "Secondary"
+    //     },
+    //     {
+    //         id: 3,
+    //         class: "var(--success)",
+    //         title: "Success"
+    //     },
+    //     {
+    //         id: 4,
+    //         class: "var(--info)",
+    //         title: "Info"
+    //     },
+    //     {
+    //         id: 5,
+    //         class: "var(--warning)",
+    //         title: "Warning"
+    //     },
+    //     {
+    //         id: 6,
+    //         class: "var(--danger)",
+    //         title: "Danger"
+    //     },
+    //     {
+    //         id: 7,
+    //         class: "var(--dark)",
+    //         title: "Dark"
+    //     },
+    //     {
+    //         id: 8,
+    //         class: "var(--pink)",
+    //         title: "Pink Color"
+    //     },
+    //     {
+    //         id: 9,
+    //         class: "var(--orange)",
+    //         title: "Orange"
+    //     },
+    //     {
+    //         id: 10,
+    //         class: "var(--light)",
+    //         title: "Light"
+    //     },
+    //     {
+    //         id: 11,
+    //         class: "var(--royal-blue)",
+    //         title: "Royal Blue"
+    //     },
+    //     {
+    //         id: 12,
+    //         class: "var(--info)",
+    //         title: "Link Button"
+    //     }
+
+    // ]
     export const buttonVariants = [
         {
             id: 1,
-            class: "bg-secondary text-white",
+            variant: "secondary",
             title: "Primary"
         },
         {
             id: 2,
-            class: "bg-[var(--primary-700)]",
+            variant: "primary",
             title: "Secondary"
         },
         {
             id: 3,
-            class: "bg-success",
+            variant: "success",
             title: "Success"
         },
         {
             id: 4,
-            class: "bg-[var(--info)] text-white",
+            variant: "info",
             title: "Info"
         },
         {
             id: 5,
-            class: "bg-warning ",
+            variant: "warning",
             title: "Warning"
         },
         {
             id: 6,
-            class: "bg-[var(--danger)]",
+            variant: "danger",
             title: "Danger"
         },
         {
             id: 7,
-            class: "bg-[var(--dark)] text-black",
+            variant: "dark",
             title: "Dark"
         },
         {
             id: 8,
-            class: "bg-[var(--pink)] ",
+            variant: "pink",
             title: "Pink Color"
         },
         {
             id: 9,
-            class: "bg-[var(--orange)]  ",
+            variant: "orange",
             title: "Orange"
         },
         {
             id: 10,
-            class: "bg-[var(--light)]  ",
+            variant: "light",
             title: "Light"
         },
         {
             id: 11,
-            class: "bg-[var(--royal-blue)]  ",
+            variant: "royal-blue",
             title: "Royal Blue"
         },
         {
             id: 12,
-            class: "btn-link text-[var(--info)] underline ",
+            variant: "",
+            title: "Link Button"
+        }
+
+    ]
+
+    export const outlineVariants = [
+        {
+            id: 1,
+            variant: "primary-line",
+            title: "Primary"
+        },
+        {
+            id: 2,
+            variant: "secondary-line",
+            title: "Secondary"
+        },
+        {
+            id: 3,
+            variant: "success-line",
+            title: "Success"
+        },
+        {
+            id: 4,
+            variant: "info-line",
+            title: "Info"
+        },
+        {
+            id: 5,
+            variant: "warning-line",
+            title: "Warning"
+        },
+        {
+            id: 6,
+            variant: "danger-line",
+            title: "Danger"
+        },
+        {
+            id: 7,
+            variant: "dark-line",
+            title: "Dark"
+        },
+        {
+            id: 8,
+            variant: "pink",
+            title: "Pink Color"
+        },
+        {
+            id: 9,
+            variant: "orange",
+            title: "Orange"
+        },
+        {
+            id: 10,
+            variant: "light",
+            title: "Light"
+        },
+        {
+            id: 11,
+            variant: "royal-blue",
+            title: "Royal Blue"
+        },
+        {
+            id: 12,
+            variant: "",
             title: "Link Button"
         }
 

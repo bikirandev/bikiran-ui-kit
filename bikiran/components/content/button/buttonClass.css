@@ -1,0 +1,36 @@
+.btn {
+    @apply px-3 md:px-5 py-1 md:py-2.5 text-base
+}
+.btn-primary {
+    @apply bg-secondary
+}
+.btn-secondary {
+    @apply bg-[var(--primary-700)] 
+}
+.btn-success {
+    @apply bg-[var(--success)] 
+}
+.btn-info {
+    @apply bg-[var(--info)] 
+}
+.btn-warning {
+    @apply bg-[var(--warning)] 
+}
+.btn-danger {
+    @apply bg-[var(--danger)] 
+}
+.btn-dark {
+    @apply bg-[var(--dark)]  text-black
+}
+.btn-pink {
+    @apply bg-[var(--pink)] 
+}
+.btn-orange {
+    @apply bg-[var(--orange)] 
+}
+.btn-light {
+    @apply bg-[var(--light)] 
+}
+.btn-royal-blue {
+    @apply bg-[var(--royal-blue)] 
+}

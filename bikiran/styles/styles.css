@@ -15,5 +15,6 @@
 @import "./support-style.css";
 @import "./filter-inputs.css";
 @import "./table.css";
+@import "../components//content/button/buttonClass.css"
 
 
