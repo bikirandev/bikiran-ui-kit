@@ -105,6 +105,12 @@ export const menuArray: NavItem[] = [
           iconL: icons.iconSubmenuDeleted,
           iconF: icons.iconSubmenuDeletedFill,
         },
+        {
+          id: "/component/forms",
+          title: "Forms",
+          iconL: icons.iconSubmenuUser,
+          iconF: icons.iconSubmenuUserFill,
+        },
        
       ]
   },

@@ -1,67 +1,10 @@
-    // export const buttonVariants = [
-    //     {
-    //         id: 1,
-    //         class: "var(--secondary)",
-    //         title: "Primary"
-    //     },
-    //     {
-    //         id: 2,
-    //         class: "var(--primary-700)",
-    //         title: "Secondary"
-    //     },
-    //     {
-    //         id: 3,
-    //         class: "var(--success)",
-    //         title: "Success"
-    //     },
-    //     {
-    //         id: 4,
-    //         class: "var(--info)",
-    //         title: "Info"
-    //     },
-    //     {
-    //         id: 5,
-    //         class: "var(--warning)",
-    //         title: "Warning"
-    //     },
-    //     {
-    //         id: 6,
-    //         class: "var(--danger)",
-    //         title: "Danger"
-    //     },
-    //     {
-    //         id: 7,
-    //         class: "var(--dark)",
-    //         title: "Dark"
-    //     },
-    //     {
-    //         id: 8,
-    //         class: "var(--pink)",
-    //         title: "Pink Color"
-    //     },
-    //     {
-    //         id: 9,
-    //         class: "var(--orange)",
-    //         title: "Orange"
-    //     },
-    //     {
-    //         id: 10,
-    //         class: "var(--light)",
-    //         title: "Light"
-    //     },
-    //     {
-    //         id: 11,
-    //         class: "var(--royal-blue)",
-    //         title: "Royal Blue"
-    //     },
-    //     {
-    //         id: 12,
-    //         class: "var(--info)",
-    //         title: "Link Button"
-    //     }
+    type variantsType = {
+        id: number,
+        variant: string,
+        title: string
+    }
 
-    // ]
-    export const buttonVariants = [
+    export const buttonVariants: variantsType[] = [
         {
             id: 1,
             variant: "primary",
@@ -125,7 +68,7 @@
 
     ]
 
-    export const outlineVariants = [
+    export const outlineVariants: variantsType[] = [
         {
             id: 1,
             variant: "primary-line",
