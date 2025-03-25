@@ -55,6 +55,14 @@ module.exports = {
         error: "var(--error)",
         warning: "var(--warning)",
         success: "var(--success)",
+        info: "var(--info)",
+        danger: "var(--danger)",
+        dark: "var(--dark)",
+        pink: "var(--pink)",
+        orange: "var(--orange)",
+        light: "var(--light)",
+        royalBlue: "var(--royal-blue)",
+
         "light-red": "var(--light-red)",
         destructive: {
           DEFAULT: "hsl(var(--destructive))",

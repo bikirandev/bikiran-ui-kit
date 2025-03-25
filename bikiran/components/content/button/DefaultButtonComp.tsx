@@ -1,3 +1,4 @@
+"use client";
 import Button, { TButtonVariant } from "@/bik-lib/lib/button";
 import { buttonVariants, outlineVariants } from "./constants";
 
@@ -10,13 +11,14 @@ interface ButtonCompProps {
     variant: string;
     title: string;
   }[];
-  buttonClass: string;
+  roundedClass?: string;
 }
 
 const ButtonComp = ({
   title,
   description,
   variantList,
+  roundedClass,
 }: ButtonCompProps) => {
   return (
     <div className="border border-[#FFFFFF]/10 rounded-20 mt-5 px-3 md:px-7.5 py-5 bg-[#19181F]">
@@ -31,33 +33,16 @@ const ButtonComp = ({
         </p>
 
         {/* Actual Buttons */}
-        <div className="flex gap-2 pt-4 md:mp-5 flex-wrap text-justify">
+        <div className="flex gap-2 pt-4 md:mp-5 flex-wrap">
           {variantList.map((item) => (
             <Button
               key={item.id}
               variant={item.variant as TButtonVariant}
-
-              // className={`btn ${buttonClass} ${title === "Outline Buttons" ? `hover:bg-[#12C55C]` : `btn-${item.class}`}`}
+              className={roundedClass}
             >
               {item.title}
             </Button>
           ))}
-           
-            {/* <Button
-              variant="green"
-            >
-              Button
-            </Button>
-            <Button
-              variant="pink"
-            >
-              Button
-            </Button>
-            <Button
-              variant="primary-line"
-            >
-              outline
-            </Button> */}
         </div>
       </div>
 
@@ -73,17 +58,16 @@ const ButtonComp = ({
           <p className="text-sm mb-3">-- {title} --</p>
           {variantList.map((item) => (
             <ul key={item.id} className="pt-1">
-              {
-                `<Button variant=${item.variant}>{"button"}</Button>`
-              }
-              {/* <code>
-                <Button variant={item.variant}>{"<button"}</Button>{" "}
-                <Button className="text-[#14B9FF]">type="button"</Button>{" "}
-                <Button className="text-[#FF7E7E]">{`className="${item.class}"`}</Button>
-                <Button className="text-[#5DFFD9]">{">"}</Button>{" "}
-                <Button className=" font-bold">{item.title}</Button>{" "}
-                <Button className="text-[#5DFFD9]">{"</button>"}</Button>
-              </code> */}
+              {/* {`<Button variant=${item.variant}>{"button"}</Button>`} */}
+
+              <p className="text-white">
+                <span className="text-info">{`<Button `}</span>
+                {`variant= "`}
+                <span className="text-[#FF7E7E]">{item.variant}</span>
+                {`"> `}
+                <span className="text-green-500">{"button"}</span>
+                {"</Button>"}
+              </p>
             </ul>
           ))}
         </div>
@@ -101,37 +85,41 @@ const ButtonComp = ({
 };
 
 const DefaultButtonComp = () => {
-  // const color = buttonVariants.map((item) => item.variant);
-  // console.log(color);
-
   return (
     <section>
       <h2 className="font-medium text-3xl leading-[45px] border-b border-[#FFFFFF]/10">
         Buttons
       </h2>
+      <div className="flex justify-between items-center mt-10">
+        <h2 className="font-medium text-xl md:text-3xl">Variants</h2>
 
-      {/* You can render multiple types of buttons */}
+        <button
+          className="border px-2 py-1 text-sm hover:border-blue-600 rounded-5"
+          onClick={() =>
+            window.open(
+              "https://www.npmjs.com/package/bik-button?activeTab=readme"
+            )
+          }
+        >
+          View on Github
+        </button>
+      </div>
+
       <ButtonComp
         title="Default Buttons"
         description="The .btn classes are designed to be used with the <button> element. However, you can also use these classes on <a> elements (though some browsers may apply slightly different rendering)."
         variantList={buttonVariants}
-        buttonClass="rounded-10"
       />
-
-      {/* Example: Add another dynamic group */}
       <ButtonComp
         title="Rounded Buttons"
         description="These buttons come with extra border-radius applied to make them more rounded."
-        variantList={buttonVariants} // Or another array if you have it like roundedVariants
-        buttonClass="rounded-20"
+        variantList={buttonVariants}
+        roundedClass="!rounded-20"
       />
-
-      {/*  */}
       <ButtonComp
         title="Outline Buttons"
         description="These buttons come with extra border-radius applied to make them more rounded."
-        variantList={outlineVariants} // Or another array if you have it like roundedVariants
-        buttonClass={`rounded-10 `}
+        variantList={outlineVariants}
       />
     </section>
   );

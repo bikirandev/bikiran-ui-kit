@@ -64,12 +64,12 @@
     export const buttonVariants = [
         {
             id: 1,
-            variant: "secondary",
+            variant: "primary",
             title: "Primary"
         },
         {
             id: 2,
-            variant: "primary",
+            variant: "secondary",
             title: "Secondary"
         },
         {
@@ -119,7 +119,7 @@
         },
         {
             id: 12,
-            variant: "",
+            variant: "link-button",
             title: "Link Button"
         }
 
@@ -163,27 +163,27 @@
         },
         {
             id: 8,
-            variant: "pink",
+            variant: "pink-line",
             title: "Pink Color"
         },
         {
             id: 9,
-            variant: "orange",
+            variant: "orange-line",
             title: "Orange"
         },
         {
             id: 10,
-            variant: "light",
+            variant: "light-line",
             title: "Light"
         },
         {
             id: 11,
-            variant: "royal-blue",
+            variant: "royal-blue-line",
             title: "Royal Blue"
         },
         {
             id: 12,
-            variant: "",
+            variant: "link-button-line",
             title: "Link Button"
         }
 
