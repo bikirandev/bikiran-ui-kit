@@ -1,7 +1,7 @@
 "use client";
-import { bgColorMap, overviewData, variantData } from "./constant";
+import { overviewData } from "./constant";
 
-const VariantsComp = () => {
+const VariantTableComp = () => {
   return (
     <section>
       <div className="border border-[#FFFFFF]/10 rounded-20 mt-5 px-3 md:px-7.5 py-5 bg-[#19181F]">
@@ -37,7 +37,7 @@ const VariantsComp = () => {
                       : user.id === 2
                         ? "bg-secondary"
                         : user.id === 3
-                          ? "bg-info"
+                          ? "bg-danger"
                           : user.id === 4
                             ? "bg-light"
                             : user.id === 5
@@ -57,8 +57,8 @@ const VariantsComp = () => {
           </table>
         </div>
 
-        <div className="border border-[#FFFFFF]/10 mt-8 rounded-15 ">
-          <div className="flex justify-between bg-[#1F1E25] border-b rounded-t-15 border-[#FFFFFF]/10 px-5 py-3 ">
+        <div className="border border-[#FFFFFF]/10 mt-8 rounded-15">
+          <div className="flex justify-between bg-[#1F1E25] border-b rounded-t-15 border-[#FFFFFF]/10 px-5 py-3">
             <p>HTML</p>
             <button className="border border-[#12C55C] px-2.5 py-1 rounded-8 hover:bg-[#12C55C]">
               Copy
@@ -103,4 +103,4 @@ const VariantsComp = () => {
   );
 };
 
-export default VariantsComp;
+export default VariantTableComp;

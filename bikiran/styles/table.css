@@ -25,12 +25,9 @@ table.table-container-variant thead {
   @apply bg-[#ffff]/20 overflow-hidden;
 }
 table.table-container-variant th {
-  @apply px-2 py-2 font-medium text-[13px] relative;
+  @apply px-2 py-4 font-medium text-[13px] relative;
 }
-table.table-container-variant th::after {
-  content: "";
-  @apply w-[1px] h-1/2 absolute top-1/2 right-0 transform -translate-y-1/2 bg-primary-300;
-}
+
 table.table-container-variant th:last-child::after {
   @apply hidden;
 }
@@ -38,13 +35,13 @@ table.table-container-variant th:first-child {
   @apply rounded-tl-8 rounded-bl-8 text-start;
 }
 table.table-container-variant th:last-child {
-  @apply rounded-tr-8 rounded-br-8 text-end;
+  /* @apply rounded-tr-8 rounded-br-8 text-end; */
 }
 table.table-container tr {
   /* @apply transition-colors hover:bg-muted/50 even:bg-primary-50; */
 }
 table.table-container-variant td {
-  @apply px-2 py-2 font-normal text-[13px] 2xl:text-sm;
+  @apply px-2 py-3 font-normal text-[13px] 2xl:text-sm;
 }
 
 table.table-container-variant tr.not-found {
