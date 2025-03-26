@@ -1,4 +1,3 @@
-"use client";
 import { overviewData } from "./constant";
 
 const VariantTableComp = () => {
@@ -23,7 +22,7 @@ const VariantTableComp = () => {
                 <th className="!text-center w-[50px]">#</th>
                 <th className="text-center w-[150px]">Fast</th>
                 <th className="text-center w-[150px]">Last</th>
-                <th className="text-center w-[150px]">Email</th>
+                <th className="text-center w-[150px]">User Info</th>
               </tr>
             </thead>
 

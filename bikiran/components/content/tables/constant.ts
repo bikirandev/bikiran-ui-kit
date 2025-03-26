@@ -1,3 +1,5 @@
+import { icons } from "@/bikiran/lib/icons";
+
 export type Variant = {
     id: number;
     class: string;
@@ -5,14 +7,23 @@ export type Variant = {
     heading2: string;
 };
 
-export const overviewData = [
-    { id: 1, firstName: 'John', lastName: 'Doe', email: '@johndoe' },
-    { id: 2, firstName: 'Jane', lastName: 'Smith', email: '@janesmith' },
-    { id: 3, firstName: 'Alice', lastName: 'Johnson', email: '@alicejohnson' },
-    { id: 4, firstName: 'Alen', lastName: 'Johnson', email: '@alicejohnson' },
-    { id: 5, firstName: 'Slice', lastName: 'Johnson', email: '@alicejohnson' },
-    { id: 6, firstName: 'Malta', lastName: 'Johnson', email: '@alicejohnson' },
+type overviewDataItem = {
+  id: number;
+  firstName: string;
+  lastName: string;
+  email: string;
+  organization: string;
+  phone: string;
+  image: string;
+};
 
+export const overviewData: overviewDataItem[] = [
+    { id: 1, firstName: 'John', lastName: 'Doe', email: '@johndoe', organization: 'Bikiran', phone: '00099922222', image: icons.iconProfile },
+    { id: 2, firstName: 'Jane', lastName: 'Smith', email: '@janesmith', organization: 'Bikiran', phone: '00099922222', image: icons.iconProfile },
+    { id: 3, firstName: 'Alice', lastName: 'Johnson', email: '@alicejohnson', organization: 'Bikiran', phone: '00099922222', image: icons.iconProfile },
+    { id: 4, firstName: 'Alen', lastName: 'Johnson', email: '@alicejohnson', organization: 'Bikiran', phone: '00099922222', image: icons.iconProfile },
+    { id: 5, firstName: 'Slice', lastName: 'Johnson', email: '@alicejohnson', organization: 'Bikiran', phone: '00099922222', image: icons.iconProfile },
+    { id: 6, firstName: 'Malta', lastName: 'Johnson', email: '@alicejohnson', organization: 'Bikiran', phone: '00099922222', image: icons.iconProfile },
 ];
 
 type VariantClass =

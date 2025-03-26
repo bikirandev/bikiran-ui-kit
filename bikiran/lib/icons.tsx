@@ -139,6 +139,11 @@ import iconSubmenuErrorLog from "@/public/assets/images/icons/icon-submenu-error
 import iconSubmenuCPanel from "@/public/assets/images/icons/icon-submenu-cPanel.svg";
 import iconSubmenuDeleted from "@/public/assets/images/icons/icon-submenu-deleted-domain.svg";
 import iconSubmenuDeletedFill from "@/public/assets/images/icons/icon-submenu-deleted-domain-fill.svg";
+import iconSubmenuTable from "@/public/assets/images/icons/icon-submenu-table.svg";
+import iconSubmenuTableFill from "@/public/assets/images/icons/icon-submenu-table-fill.svg";
+import iconSubmenuButton from "@/public/assets/images/icons/icon-submenu-button.svg";
+import iconSubmenuButtonFill from "@/public/assets/images/icons/icon-submenu-button-fill.svg";
+import iconProfile from "@/public/assets/images/icons/icon-profile-img.svg";
 
 // sidebar submenu fill icons
 import iconSubmenuUserFill from "@/public/assets/images/icons/icon-submenu-user-fill.svg";
@@ -358,6 +363,11 @@ export const icons = {
   iconSubmenuWalletActive,
   iconSubmenuDeleted,
   iconSubmenuDeletedFill,
+  iconSubmenuTable,
+  iconSubmenuTableFill,
+  iconSubmenuButton,
+  iconSubmenuButtonFill,
+  iconProfile,
 };
 
 //support info

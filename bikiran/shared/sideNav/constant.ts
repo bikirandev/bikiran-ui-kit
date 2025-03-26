@@ -96,14 +96,14 @@ export const menuArray: NavItem[] = [
         {
           id: "/component/tables",
           title: "Tables",
-          iconL: icons.iconSubmenuDeleted,
-          iconF: icons.iconSubmenuDeletedFill,
+          iconL: icons.iconSubmenuTable,
+          iconF: icons.iconSubmenuTableFill,
         },
         {
           id: "/component/buttons",
           title: "Buttons",
-          iconL: icons.iconSubmenuDeleted,
-          iconF: icons.iconSubmenuDeletedFill,
+          iconL: icons.iconSubmenuButton,
+          iconF: icons.iconSubmenuButtonFill,
         },
         {
           id: "/component/forms",
