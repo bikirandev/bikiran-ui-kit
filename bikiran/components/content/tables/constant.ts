@@ -6,9 +6,13 @@ export type Variant = {
 };
 
 export const overviewData = [
-    { id: 1, firstName: 'John', lastName: 'Doe', handle: '@johndoe' },
-    { id: 2, firstName: 'Jane', lastName: 'Smith', handle: '@janesmith' },
-    { id: 3, firstName: 'Alice', lastName: 'Johnson', handle: '@alicejohnson' },
+    { id: 1, firstName: 'John', lastName: 'Doe', email: '@johndoe' },
+    { id: 2, firstName: 'Jane', lastName: 'Smith', email: '@janesmith' },
+    { id: 3, firstName: 'Alice', lastName: 'Johnson', email: '@alicejohnson' },
+    { id: 4, firstName: 'Alen', lastName: 'Johnson', email: '@alicejohnson' },
+    { id: 5, firstName: 'Slice', lastName: 'Johnson', email: '@alicejohnson' },
+    { id: 6, firstName: 'Malta', lastName: 'Johnson', email: '@alicejohnson' },
+
 ];
 
 type VariantClass =

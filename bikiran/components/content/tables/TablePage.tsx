@@ -1,11 +1,11 @@
-import OverviewComp from "./OverviewComp";
+import BasicTableComp from "./BasicTableComp";
 import VariantsComp from "./VariantsComp";
 
 const TablePage = () => {
   return (
     <div className="container">
       <div className="pt-6 md:pt-11 pb-[150px]">
-        <OverviewComp />
+        <BasicTableComp/>
         <VariantsComp />
       </div>
     </div>

@@ -1,58 +1,105 @@
 "use client";
-import { bgColorMap, variantData } from "./constant";
+import { bgColorMap, overviewData, variantData } from "./constant";
 
 const VariantsComp = () => {
   return (
-    <div>
-      <div className="flex justify-between items-center mt-10">
-        <h2 className="font-medium text-xl md:text-3xl">Variants </h2>
-        <button
-          className="border px-2 py-1 text-sm hover:border-blue-600 rounded-5"
-          onClick={() =>
-            window.open(
-              "https://www.npmjs.com/package/bik-button?activeTab=readme"
-            )
-          }
-        >
-          View on Github
-        </button>
-      </div>
-      <p className="font-normal text-sm md:text-base mt-3 text-primary-700 text-justify">
-        Use contextual classes to color tables, table rows or individual cells.
-      </p>
-      <p className="font-normal text-sm md:text-base my-4 text-primary-700 text-justify bg-[#CFF4FC] p-3">
-        <span className="font-bold text-sm md:text-base">Heads up!</span>{" "}
-        Because of the more complicated CSS used to generate our table variants,
-        they most likely won’t see color mode adaptive styling.
-      </p>
+    <section>
+      <div className="border border-[#FFFFFF]/10 rounded-20 mt-5 px-3 md:px-7.5 py-5 bg-[#19181F]">
+        <div>
+          <p className="font-medium text-xl">
+            Variant Table <span className="text-[#14B9FF]"> #</span>
+          </p>
+          <p className="text-sm text-[#F3F4F6]/70 mt-1 text-justify">
+            Form controls are styled with a mix of Sass and CSS variables,
+            allowing them to adapt to color modes and support any customization
+            method.
+          </p>
+        </div>
 
-      <div className="overflow-x-auto">
-        <table className="table-container border rounded-15 mt-4">
-          <thead>
-            <tr className="[&>th]:!font-semibold [&>th]:!text-base [&>th]:!text-center">
-              <th>Class</th>
-              <th>Heading</th>
-              <th>Heading</th>
-            </tr>
-          </thead>
-          <tbody>
-            {/* table data */}
-            {variantData.map((user, index) => (
-              <tr
-                key={index}
-                className={`border-b border-gray-200 ${bgColorMap[user.class]} ${user.class === "primary" ? "text-white" : ""}`}
-              >
-                <td className="text-center !font-medium !text-base">
-                  {user.class}
-                </td>
-                <td className="text-center">{user.heading1}</td>
-                <td className="text-center">{user.heading2}</td>
+        <div className="overflow-x-auto mt-4 rounded-10">
+          <table className="table-container-variant w-full">
+            <thead>
+              <tr>
+                <th className="!text-center w-[50px]">#</th>
+                <th className="text-center w-[150px]">Fast</th>
+                <th className="text-center w-[150px]">Last</th>
+                <th className="text-center w-[150px]">Email</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+
+            <tbody>
+              {overviewData.map((user, index) => (
+                <tr
+                  key={index}
+                  className={`${
+                    user.id === 1
+                      ? "bg-primary-700"
+                      : user.id === 2
+                        ? "bg-secondary"
+                        : user.id === 3
+                          ? "bg-info"
+                          : user.id === 4
+                            ? "bg-light"
+                            : user.id === 5
+                              ? "bg-warning"
+                              : user.id === 6
+                                ? "bg-royalBlue"
+                                : "bg-gray-500"
+                  } text-white`}
+                >
+                  <td className="!text-center">{user.id}</td>
+                  <td className="text-center">{user.firstName}</td>
+                  <td className="text-center">{user.lastName}</td>
+                  <td className="text-center">{user.email}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <div className="border border-[#FFFFFF]/10 mt-8 rounded-15 ">
+          <div className="flex justify-between bg-[#1F1E25] border-b rounded-t-15 border-[#FFFFFF]/10 px-5 py-3 ">
+            <p>HTML</p>
+            <button className="border border-[#12C55C] px-2.5 py-1 rounded-8 hover:bg-[#12C55C]">
+              Copy
+            </button>
+          </div>
+          <div className="h-[280px] overflow-y-scroll custom-scrollbar px-5 py-3 flex gap-10">
+            <code>
+              <span className="text-secondary">{`<tr className="bg-secondary">`}</span>{" "}
+              <br />
+              <span className="text-primary-700">{`<tr className="bg-primary-700">`}</span>{" "}
+              <br />
+              <span className="text-success">{`<tr className="bg-success">`}</span>{" "}
+              <br />
+              <span className="text-info">{`<tr className="bg-info">`}</span>{" "}
+              <br />{" "}
+              <span className="text-pink">{`<tr className="bg-pink">`}</span>{" "}
+              <br />
+              <span className="text-royalBlue">{`<tr className="bg-royalBlue">`}</span>{" "}
+              <br />
+              <span className="text-orange">{`<tr className="bg-orange">`}</span>{" "}
+              <br />
+              <span className="text-warning">{`<tr className="bg-success">`}</span>{" "}
+              <br />
+            </code>
+          </div>
+        </div>
+
+        {/* Bottom Info */}
+        <div className="bg-[#FFDC5D]/5 rounded-10 px-5 py-4.5 mt-6 border-l-2 border-[#FFDC5D]">
+          <p className="text-base text-[#44CAB3]">
+            Accessibility tip: Using color to add meaning only provides a visual
+            indication, which will not be conveyed to users of assistive
+            technologies like screen readers. Please ensure the meaning is
+            obvious from the content itself (e.g., the visible text with
+            a sufficient color contrast) or is included through alternative
+            means, such as additional text hidden with
+            the .visually-hidden class.
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

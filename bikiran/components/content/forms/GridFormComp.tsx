@@ -1,9 +1,5 @@
-import {
-  InputDate,
-  InputField,
-  SelectOption,
-  TextareaField,
-} from "@/bik-lib/lib/Input";
+"use client";
+import { InputDate, InputField, SelectOption } from "@/bik-lib/lib/Input";
 import React, { useState } from "react";
 
 const GridFormComp = () => {
@@ -107,7 +103,8 @@ const GridFormComp = () => {
                   addOption(item.id, item.title, item.id)
                 )}`}</span>{" "}
               <br />
-              <span className="text-[#14B9FF]">{`placeholder="State"`}</span><br />
+              <span className="text-[#14B9FF]">{`placeholder="State"`}</span>
+              <br />
               <span className="text-[#FF7E7E]">{`/>`}</span> <br />
             </code>
             <code>
@@ -115,8 +112,7 @@ const GridFormComp = () => {
               <span className="text-[#FF7E7E]">{`<InputDate`}</span> <br />
               <span className="text-[#14B9FF]">{`label="Date of Birth"`}</span>{" "}
               <br />
-              <span className="text-[#5DFFD9]">{`name="schedule"`}</span>{" "}
-              <br />
+              <span className="text-[#5DFFD9]">{`name="schedule"`}</span> <br />
               <span className="text-[#FF7E7E]">{`type="datetime-local"`}</span>{" "}
               <br />
               <span className="text-[#14B9FF]">{`formData={formData}`}</span>{" "}
