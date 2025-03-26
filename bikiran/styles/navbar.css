@@ -11,7 +11,7 @@
 
 .custom-date-input {
   appearance: none;
-  background: url("../../public/assets/images/icons/icon-calender-line.svg");
+  background: url("../../public/assets/images/calenderIcon.svg.svg");
   background-repeat: no-repeat;
   background-position: right 8px center; 
   background-size: 25px; 

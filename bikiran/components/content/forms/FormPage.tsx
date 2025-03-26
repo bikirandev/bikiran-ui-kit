@@ -1,6 +1,4 @@
-"use client";
 import React from "react";
-import DefaultButtonComp from "../button/DefaultButtonComp";
 import BasicFormComp from "./BasicFormComp";
 import GridFormComp from "./GridFormComp";
 
