@@ -7,8 +7,8 @@ const TablePage = () => {
     <div className="container">
       <div className="pt-6 md:pt-11 pb-[150px]">
         <BasicTableComp />
-        <UserInfoTableComp />
         <VariantTableComp />
+        <UserInfoTableComp />
       </div>
     </div>
   );
