@@ -5,7 +5,7 @@ const BasicTableComp = () => {
   return (
     <section>
       <div className="pb-2 border-b border-[#FFFFFF]/10">
-        <div className="flex justify-between items-center mt-10F">
+        <div className="flex justify-between items-center ">
           <h2 className="font-medium text-3xl leading-[45px]">Tables</h2>
           <button
             className="border px-2 py-1 text-sm hover:border-blue-600 rounded-5"
@@ -19,7 +19,7 @@ const BasicTableComp = () => {
           </button>
         </div>
 
-        <p className="text-sm text-[#F3F4F6]/70">
+        <p className="text-sm text-[#F3F4F6]/70 mt-5">
           Due to the widespread use of elements across third-party widgets like
           calendars and date pickers, Bootstrap’s tables are opt-in. Add the
           base class .table to any then extend with our optional modifier

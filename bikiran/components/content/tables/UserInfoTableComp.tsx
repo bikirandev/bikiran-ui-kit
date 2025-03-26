@@ -30,8 +30,7 @@ export const ModalForm = () => {
   };
   return (
     <Dialog open={modalType === "create-user"} onOpenChange={closeModal}>
-      <DialogTrigger>
-      </DialogTrigger>
+      <DialogTrigger></DialogTrigger>
       <DialogContent aria-describedby={undefined} className="bg-slate-900">
         <DialogHeader>
           <DialogTitle className="text-white">Edit Profile</DialogTitle>
@@ -39,7 +38,7 @@ export const ModalForm = () => {
         <DialogBody>
           {/* <ModalContent setMessage={setMessage} closeModal={closeModal} /> */}
           <div className="mt-5 grid gap-3">
-            <div className="md:flex gap-8">
+            <div className="grid gap-2 md:flex md:gap-8">
               <InputField
                 label="First Name"
                 name="first name"
@@ -55,7 +54,7 @@ export const ModalForm = () => {
                 placeholder="Enter Your Last Name"
               />
             </div>
-            <div className="md:flex gap-8">
+            <div className="grid gap-2 md:flex md:gap-8">
               <InputField
                 label="Email Address"
                 name="email"
@@ -80,7 +79,7 @@ export const ModalForm = () => {
                 placeholder="Address"
               />
             </div>
-            <div className="md:flex gap-8">
+            <div className="grid gap-2 md:flex md:gap-8">
               <InputField
                 label="City"
                 name="name"
