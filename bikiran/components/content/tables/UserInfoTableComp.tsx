@@ -13,7 +13,6 @@ import {
   DialogTrigger,
 } from "../../ui/dialog";
 import { InputDate, InputField } from "@/bik-lib/lib/Input";
-import { InputTextareaField } from "@/bik-lib/lib/InputFields";
 import { icons } from "@/bikiran/lib/icons";
 
 export const ModalForm = () => {
@@ -32,7 +31,6 @@ export const ModalForm = () => {
   return (
     <Dialog open={modalType === "create-user"} onOpenChange={closeModal}>
       <DialogTrigger>
-        <h2>user</h2>
       </DialogTrigger>
       <DialogContent aria-describedby={undefined} className="bg-slate-900">
         <DialogHeader>
