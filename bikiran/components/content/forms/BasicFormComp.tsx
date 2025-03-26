@@ -17,8 +17,21 @@ const BasicFormComp = () => {
   return (
     <section>
       <div className="pb-2 border-b border-[#FFFFFF]/10">
-        <h2 className="font-medium text-3xl leading-[45px] ">Forms</h2>
-        <p className="text-sm text-[#F3F4F6]/70">
+        <div className="flex justify-between items-center mt-10">
+          <h2 className="font-medium text-xl md:text-3xl">Forms</h2>
+
+          <button
+            className="border px-2 py-1 text-sm hover:border-blue-600 rounded-5"
+            onClick={() =>
+              window.open(
+                "https://www.npmjs.com/package/bik-inputs"
+              )
+            }
+          >
+            View on Github
+          </button>
+        </div>
+        <p className="text-sm text-[#F3F4F6]/70 mt-5">
           Margin utilities are the easiest way to add some structure to forms.
           They provide basic grouping of labels, controls, optional form text,
           and form validation messaging. We recommend sticking to margin-bottom

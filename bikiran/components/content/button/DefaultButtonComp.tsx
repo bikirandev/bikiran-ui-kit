@@ -5,11 +5,9 @@ import { buttonVariants, outlineVariants } from "./constants";
 const DefaultButtonComp = () => {
   return (
     <section>
-      <h2 className="font-medium text-3xl leading-[45px] border-b border-[#FFFFFF]/10">
-        Buttons
-      </h2>
+      
       <div className="flex justify-between items-center mt-10">
-        <h2 className="font-medium text-xl md:text-3xl">Variants</h2>
+        <h2 className="font-medium text-xl md:text-3xl">Buttons</h2>
 
         <button
           className="border px-2 py-1 text-sm hover:border-blue-600 rounded-5"
