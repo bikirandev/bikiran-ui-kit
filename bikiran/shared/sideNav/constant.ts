@@ -2,51 +2,29 @@ import { icons } from "@/bikiran/lib/icons";
 import { NavItem } from "@/bikiran/shared/sideNav/NavMenuTypes";
 
 export const menuArray: NavItem[] = [
-    // {
-    //     id: "user",
-    //     miniTitle: "User",
-    //     title: "Users",
-    //     iconLine: icons.iconSidebarUser,
-    //     iconFill: icons.iconSidebarUserFill,
-    //     subMenu: [
-    //         {
-    //           id: "/user/list",
-    //           title: "List of User",
-    //           iconL: icons.iconSubmenuUser,
-    //           iconF: icons.iconSubmenuUserFill,
-    //         },
-    //         {
-    //           id: "/user/properties",
-    //           title: "Properties",
-    //           iconL: icons.iconSubmenuUser,
-    //           iconF: icons.iconSubmenuUserFill,
-    //         },
-    //         {
-    //           id: "/user/email",
-    //           title: "List of Email",
-    //           iconL: icons.iconSubmenuMail,
-    //           iconF: icons.iconSubmenuMailFill,
-    //         },
-    //         {
-    //           id: "/user/phones",
-    //           title: "List of Phones",
-    //           iconL: icons.iconSubmenuPhone,
-    //           iconF: icons.iconSubmenuPhoneFill,
-    //         },
-    //         {
-    //           id: "/user/address",
-    //           title: "List of Address",
-    //           iconL: icons.iconSubmenuAddress,
-    //           iconF: icons.iconSubmenuAddressFill,
-    //         },
-    //         {
-    //           id: "/user/projects",
-    //           title: "List of Projects",
-    //           iconL: icons.iconSubmenuApplication,
-    //           iconF: icons.iconSubmenuApplicationFill,
-    //         },
-    //     ],
-    // },
+    {
+      id: "dashboard",
+      miniTitle: "dashboard",
+      title: "Dashboard",
+      iconLine: icons.iconSubmenuDashboard,
+      iconFill: icons.iconSubmenuDashboardFill,
+      subMenu: [
+        {
+          id: "/dashboard/dashboard-1",
+          title: "Dashboard-1",
+          iconL: icons.iconSubmenuPricing,
+          iconF: icons.iconSubmenuPricingFill,
+        },
+        {
+          id: "/dashboard/dashboard-2",
+          title: "Dashboard-2",
+          iconL: icons.iconSubmenuPricing,
+          iconF: icons.iconSubmenuPricingFill,
+        },
+        
+      
+      ]
+  },
     {
       id: "component",
       miniTitle: "component",

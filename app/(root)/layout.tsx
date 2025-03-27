@@ -6,6 +6,7 @@ import AppProvider from "@/bik-lib/context/AppProvider";
 import ComposeProviders from "@/bik-lib/lib/ComposeProviders";
 import { TooltipProvider } from "@/bikiran/components/ui/tooltip";
 import SideNavPage from "@/bikiran/shared/sideNav/SideNavComp";
+import Footer from "@/bikiran/shared/footer/Footer";
 
 type RootLayoutProps = {
   children: ReactNode;

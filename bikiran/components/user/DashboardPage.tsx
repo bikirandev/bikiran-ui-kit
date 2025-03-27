@@ -1,6 +1,7 @@
 import React from "react";
 import { dashboardData } from "./constant";
 import ChartComp from "./ChartComp";
+import Footer from "@/bikiran/shared/footer/Footer";
 
 const DashboardPage = () => {
   return (
@@ -31,6 +32,9 @@ const DashboardPage = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="mt-10 border-t pt-2 pb-5 border-[#ffff]/10">
+        <Footer />
       </div>
     </section>
   );

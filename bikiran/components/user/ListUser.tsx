@@ -1,5 +1,6 @@
 import React from "react";
 import { userData } from "./constant";
+import Footer from "@/bikiran/shared/footer/Footer";
 
 const ListUser = () => {
   return (
@@ -34,6 +35,9 @@ const ListUser = () => {
             ))}
           </tbody>
         </table>
+      </div>
+      <div className="mt-10 border-t pt-2 pb-5 border-[#ffff]/10">
+        <Footer />
       </div>
     </div>
   );
