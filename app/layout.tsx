@@ -50,6 +50,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <main> {children}</main>
         </ComposeProviders>
+        {getMode() === "com" ? (
+          <>
+            <CrispWithNoSSR />
+          </>
+        ) : null}
       </body>
     </html>
   );

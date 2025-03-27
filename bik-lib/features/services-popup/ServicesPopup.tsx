@@ -8,7 +8,7 @@ import Image from "next/image";
 import { cartIcons } from "../cart-menu/icons/cartIcons";
 
 interface ServicesPopupProps {
-  auth: {
+  auth?: {
     currentUser?: {
       photoUrl?: string;
     };

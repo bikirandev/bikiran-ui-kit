@@ -36,7 +36,7 @@ const ChartComp: React.FC = () => {
     <ResponsiveContainer
       width="100%"
       height={350}
-      className="bg-primary  rounded-20 pt-12"
+      className="bg-primary rounded-20 pt-12"
     >
       <LineChart
         data={data}

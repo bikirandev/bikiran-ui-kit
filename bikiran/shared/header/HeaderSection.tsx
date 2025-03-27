@@ -46,6 +46,7 @@ const HeaderSection: React.FC<HeaderSectionProps> = ({
 
           <div>
             <SearchBar
+              onChange={() => {}}
               value=""
               className="bg-black border border-[#ffff]/20 w-[220px] md:w-[500px] ml-3 md:ml-12 h-10"
               placeholder="Search Anything..."

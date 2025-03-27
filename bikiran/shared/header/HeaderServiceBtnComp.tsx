@@ -5,8 +5,8 @@ import { useAuth2 } from "@/bik-lib/context/auth/Auth2Provider";
 import { icons } from "@/bikiran/lib/icons";
 import { cn } from "@/bik-lib/utils/cn";
 import { useApp } from "@/bik-lib/context/AppProvider";
-import { ServicesPopup } from "bik-utils";
 import Link from "next/link";
+import ServicesPopup from "@/bik-lib/features/services-popup/ServicesPopup";
 
 const HeaderServiceBtnComp = () => {
   const [show, setShow] = useState(false);
@@ -45,9 +45,6 @@ const HeaderServiceBtnComp = () => {
           apps={applicationData}
           setShow={setShow}
           ref={ref}
-          ImageComponent={Image}
-          LinkComponent={Link}
-          applicationData={applicationData}
         />
       )}
     </button>

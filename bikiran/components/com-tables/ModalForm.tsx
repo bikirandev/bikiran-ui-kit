@@ -6,7 +6,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "../../ui/dialog";
+} from "../ui/dialog";
 import { InputDate, InputField } from "@/bik-lib/lib/Input";
 import { useTemplate } from "@/bik-lib/context/template/TemplateProvider";
 import Button from "@/bik-lib/lib/button";

@@ -48,60 +48,6 @@ export const menuArray: NavItem[] = [
     //     ],
     // },
     {
-        id: "domain",
-        miniTitle: "domain",
-        title: "Domain",
-        iconLine: icons.iconSidebarDomain,
-        iconFill: icons.iconSidebarDomainFill,
-        subMenu: [
-          {
-            id: "/domain/package",
-            title: "Domain Package",
-            iconL: icons.iconSubmenuPricing,
-            iconF: icons.iconSubmenuPricingFill,
-          },
-          {
-            id: "/domain/subscriptions",
-            title: "Subscriptions",
-            iconL: icons.iconSubmenuInvoice,
-            iconF: icons.iconSubmenuInvoiceFill,
-          },
-          {
-            id: "/domain/delete-domain-list",
-            title: "Delete Domain",
-            iconL: icons.iconSubmenuDeleted,
-            iconF: icons.iconSubmenuDeletedFill,
-          },
-        ]
-    },
-    {
-      id: "hosting",
-      miniTitle: "hosting",
-      title: "Hosting",
-      iconLine: icons.iconSidebarHosting,
-      iconFill: icons.iconSidebarHostingFill,
-      subMenu: [
-        {
-          id: "/hosting/package",
-          title: "Hosting Package",
-          iconL: icons.iconSubmenuPricing,
-          iconF: icons.iconSubmenuPricingFill,
-        },
-        {
-          id: "/hosting/subscriptions",
-          title: "Subscriptions",
-          iconL: icons.iconSubmenuHosting,
-          iconF: icons.iconSubmenuHostingFill,
-        },
-        {
-          id: "/hosting/cPanels",
-          title: "cPanels",
-          iconL: icons.iconSubmenuCPanel,
-          iconF: icons.iconSubmenuCPanelFill,
-        },
-      ]
-  },
-    {
       id: "component",
       miniTitle: "component",
       title: "Component",
@@ -180,6 +126,61 @@ export const menuArray: NavItem[] = [
       },
     ]
 },
+    {
+        id: "domain",
+        miniTitle: "domain",
+        title: "Domain",
+        iconLine: icons.iconSidebarDomain,
+        iconFill: icons.iconSidebarDomainFill,
+        subMenu: [
+          {
+            id: "/domain/package",
+            title: "Domain Package",
+            iconL: icons.iconSubmenuPricing,
+            iconF: icons.iconSubmenuPricingFill,
+          },
+          {
+            id: "/domain/subscriptions",
+            title: "Subscriptions",
+            iconL: icons.iconSubmenuInvoice,
+            iconF: icons.iconSubmenuInvoiceFill,
+          },
+          {
+            id: "/domain/delete-domain-list",
+            title: "Delete Domain",
+            iconL: icons.iconSubmenuDeleted,
+            iconF: icons.iconSubmenuDeletedFill,
+          },
+        ]
+    },
+    {
+      id: "hosting",
+      miniTitle: "hosting",
+      title: "Hosting",
+      iconLine: icons.iconSidebarHosting,
+      iconFill: icons.iconSidebarHostingFill,
+      subMenu: [
+        {
+          id: "/hosting/package",
+          title: "Hosting Package",
+          iconL: icons.iconSubmenuPricing,
+          iconF: icons.iconSubmenuPricingFill,
+        },
+        {
+          id: "/hosting/subscriptions",
+          title: "Subscriptions",
+          iconL: icons.iconSubmenuHosting,
+          iconF: icons.iconSubmenuHostingFill,
+        },
+        {
+          id: "/hosting/cPanels",
+          title: "cPanels",
+          iconL: icons.iconSubmenuCPanel,
+          iconF: icons.iconSubmenuCPanelFill,
+        },
+      ]
+  },
+   
    
     {
         id: "appOcean",

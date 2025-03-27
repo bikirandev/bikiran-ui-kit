@@ -4,7 +4,7 @@ import SideNavMenu from "./SideNavMenu";
 import HeaderSection from "../header/HeaderSection";
 import MobileNav from "./MobileNav";
 
-const SideNavPage = () => {
+const SideNavComp = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleClose = () => {
@@ -15,7 +15,7 @@ const SideNavPage = () => {
     <div>
       {/* Side Navigation Menu */}
       <div className="md:block hidden">
-        <SideNavMenu />
+        <SideNavMenu handleClose={handleClose}/>
       </div>
       <div>
         <MobileNav isMenuOpen={isMenuOpen} handleClose={handleClose} />
@@ -28,4 +28,4 @@ const SideNavPage = () => {
   );
 };
 
-export default SideNavPage;
+export default SideNavComp;
