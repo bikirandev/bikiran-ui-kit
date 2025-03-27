@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { NavItem } from "./NavMenuTypes";
 import SideNavSubMenu from "./SideNavSubMenu";
 import { usePathname } from "next/navigation";
+import { CompLogo } from "../header/HeaderSection";
 
 const SideNavMenu = ({ onMenuClick, handleClose }: any) => {
   const [activeNavId, setActiveNavId] = useState<string | null>(null);
@@ -33,9 +34,9 @@ const SideNavMenu = ({ onMenuClick, handleClose }: any) => {
       >
         {/* side nav menu... */}
 
-        {/* <div className="md:hidden block pt-4 ml-16" onClick={() => onMenuClick()}>
-          <button>Close</button>
-        </div> */}
+        <div className="pt-3 pb-3 px-4" onClick={() => onMenuClick()}>
+          <CompLogo />
+        </div>
 
         <div>
           {menuArray.map((item: NavItem) => (

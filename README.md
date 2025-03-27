@@ -20,17 +20,73 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+# Bikiran UI Kits
 
-To learn more about Next.js, take a look at the following resources:
+Welcome to **Bikiran UI Kits**! We appreciate your interest in contributing to this project. This repository contains reusable UI components designed to enhance your development workflow.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 How to Contribute
+We welcome all contributions to improve this project. Whether you are fixing a bug, adding a feature, or improving documentation, your help is valued!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 📌 Contribution Guidelines
+- Check existing issues before creating a new one.
+- Follow the project's coding style and best practices.
+- Write clear and concise commit messages.
+- Ensure any new code is well-documented and tested.
 
-## Deploy on Vercel
+## 🔧 Steps to Contribute
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 1. Fork the Repository
+Click the **Fork** button at the top of the repository to create a copy under your GitHub account.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 2. Clone Your Fork
+Run the following command to clone your fork:
+```sh
+ git clone https://github.com/your-username/bikiran-inputs.git
+```
+
+### 3. Create a Branch
+Create a new branch with a descriptive name:
+```sh
+ git checkout -b feature-branch-name
+```
+
+### 4. Make Your Changes
+- Implement your feature or fix the issue.
+- Ensure your code follows the project's coding standards.
+
+### 5. Commit Your Changes
+Write a meaningful commit message:
+```sh
+ git commit -m "Add new feature/fix issue #issue-number"
+```
+
+### 6. Push to Your Fork
+Run the following command to push your changes:
+```sh
+ git push origin feature-branch-name
+```
+
+### 7. Submit a Pull Request (PR)
+- Navigate to the original repository.
+- Click **New Pull Request**.
+- Provide a clear description of your changes.
+
+## 🛠 Testing Your Changes
+Currently, there is no automated test system in place. If needed, manually verify your changes by running and integrating them within a local React project.
+
+## 🛠 Reporting Issues
+If you encounter a bug or have a feature request, please open an issue and provide relevant details.
+
+## 📦 NPM Packages
+You can find the related NPM packages below:
+- [bik-inputs](https://www.npmjs.com/package/bik-inputs)
+- [bik-button](https://www.npmjs.com/package/bik-button)
+
+## 🔗 License
+This project is licensed under the MIT License.
+
+## 👨‍💻 Author
+Created by [bikiran.com](https://bikiran.com). Feel free to contribute!
+
+We appreciate your contributions! 🚀
+

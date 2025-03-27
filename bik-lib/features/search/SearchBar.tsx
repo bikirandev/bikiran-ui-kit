@@ -63,7 +63,7 @@ const SearchBar: React.FC<ISearchBar> = ({
           width={0}
           height={0}
           sizes="100vw"
-          className="w-full h-auto"
+          className="w-full h-auto opacity-50"
         />
       </div>
       <input

@@ -2,51 +2,51 @@ import { icons } from "@/bikiran/lib/icons";
 import { NavItem } from "@/bikiran/shared/sideNav/NavMenuTypes";
 
 export const menuArray: NavItem[] = [
-    {
-        id: "user",
-        miniTitle: "User",
-        title: "Users",
-        iconLine: icons.iconSidebarUser,
-        iconFill: icons.iconSidebarUserFill,
-        subMenu: [
-            {
-              id: "/user/list",
-              title: "List of User",
-              iconL: icons.iconSubmenuUser,
-              iconF: icons.iconSubmenuUserFill,
-            },
-            {
-              id: "/user/properties",
-              title: "Properties",
-              iconL: icons.iconSubmenuUser,
-              iconF: icons.iconSubmenuUserFill,
-            },
-            {
-              id: "/user/email",
-              title: "List of Email",
-              iconL: icons.iconSubmenuMail,
-              iconF: icons.iconSubmenuMailFill,
-            },
-            {
-              id: "/user/phones",
-              title: "List of Phones",
-              iconL: icons.iconSubmenuPhone,
-              iconF: icons.iconSubmenuPhoneFill,
-            },
-            {
-              id: "/user/address",
-              title: "List of Address",
-              iconL: icons.iconSubmenuAddress,
-              iconF: icons.iconSubmenuAddressFill,
-            },
-            {
-              id: "/user/projects",
-              title: "List of Projects",
-              iconL: icons.iconSubmenuApplication,
-              iconF: icons.iconSubmenuApplicationFill,
-            },
-        ],
-    },
+    // {
+    //     id: "user",
+    //     miniTitle: "User",
+    //     title: "Users",
+    //     iconLine: icons.iconSidebarUser,
+    //     iconFill: icons.iconSidebarUserFill,
+    //     subMenu: [
+    //         {
+    //           id: "/user/list",
+    //           title: "List of User",
+    //           iconL: icons.iconSubmenuUser,
+    //           iconF: icons.iconSubmenuUserFill,
+    //         },
+    //         {
+    //           id: "/user/properties",
+    //           title: "Properties",
+    //           iconL: icons.iconSubmenuUser,
+    //           iconF: icons.iconSubmenuUserFill,
+    //         },
+    //         {
+    //           id: "/user/email",
+    //           title: "List of Email",
+    //           iconL: icons.iconSubmenuMail,
+    //           iconF: icons.iconSubmenuMailFill,
+    //         },
+    //         {
+    //           id: "/user/phones",
+    //           title: "List of Phones",
+    //           iconL: icons.iconSubmenuPhone,
+    //           iconF: icons.iconSubmenuPhoneFill,
+    //         },
+    //         {
+    //           id: "/user/address",
+    //           title: "List of Address",
+    //           iconL: icons.iconSubmenuAddress,
+    //           iconF: icons.iconSubmenuAddressFill,
+    //         },
+    //         {
+    //           id: "/user/projects",
+    //           title: "List of Projects",
+    //           iconL: icons.iconSubmenuApplication,
+    //           iconF: icons.iconSubmenuApplicationFill,
+    //         },
+    //     ],
+    // },
     {
         id: "domain",
         miniTitle: "domain",
@@ -74,6 +74,33 @@ export const menuArray: NavItem[] = [
           },
         ]
     },
+    {
+      id: "hosting",
+      miniTitle: "hosting",
+      title: "Hosting",
+      iconLine: icons.iconSidebarHosting,
+      iconFill: icons.iconSidebarHostingFill,
+      subMenu: [
+        {
+          id: "/hosting/package",
+          title: "Hosting Package",
+          iconL: icons.iconSubmenuPricing,
+          iconF: icons.iconSubmenuPricingFill,
+        },
+        {
+          id: "/hosting/subscriptions",
+          title: "Subscriptions",
+          iconL: icons.iconSubmenuHosting,
+          iconF: icons.iconSubmenuHostingFill,
+        },
+        {
+          id: "/hosting/cPanels",
+          title: "cPanels",
+          iconL: icons.iconSubmenuCPanel,
+          iconF: icons.iconSubmenuCPanelFill,
+        },
+      ]
+  },
     {
       id: "component",
       miniTitle: "component",
@@ -111,36 +138,49 @@ export const menuArray: NavItem[] = [
           iconL: icons.iconSubmenuUser,
           iconF: icons.iconSubmenuUserFill,
         },
-       
+      
       ]
   },
-    {
-        id: "hosting",
-        miniTitle: "hosting",
+  {
+    id: "product",
+    miniTitle: "product",
+    title: "Product",
+    iconLine: icons.iconSidebarSupport,
+    iconFill: icons.iconSidebarSupportFill,
+    subMenu: [
+      {
+        id: "/product/appOcean",
+        title: "AppOcean",
+        iconL: icons.iconSubmenuPricing,
+        iconF: icons.iconSubmenuPricingFill,
+      },
+      {
+        id: "/product/edusoft",
+        title: "EduSoft",
+        iconL: icons.iconSubmenuHosting,
+        iconF: icons.iconSubmenuHostingFill,
+      },
+      {
+        id: "/product/hosting",
         title: "Hosting",
-        iconLine: icons.iconSidebarHosting,
-        iconFill: icons.iconSidebarHostingFill,
-        subMenu: [
-          {
-            id: "/hosting/package",
-            title: "Hosting Package",
-            iconL: icons.iconSubmenuPricing,
-            iconF: icons.iconSubmenuPricingFill,
-          },
-          {
-            id: "/hosting/subscriptions",
-            title: "Subscriptions",
-            iconL: icons.iconSubmenuHosting,
-            iconF: icons.iconSubmenuHostingFill,
-          },
-          {
-            id: "/hosting/cPanels",
-            title: "cPanels",
-            iconL: icons.iconSubmenuCPanel,
-            iconF: icons.iconSubmenuCPanelFill,
-          },
-        ]
-    },
+        iconL: icons.iconSubmenuMail,
+        iconF: icons.iconSubmenuMailFill,
+      },
+      {
+        id: "/product/domain",
+        title: "Domain",
+        iconL: icons.iconSubmenuPhone,
+        iconF: icons.iconSubmenuPhoneFill,
+      },
+      {
+        id: "/product/support",
+        title: "Support",
+        iconL: icons.iconSubmenuPricing,
+        iconF: icons.iconSubmenuPricingFill,
+      },
+    ]
+},
+   
     {
         id: "appOcean",
         miniTitle: "appOcean",

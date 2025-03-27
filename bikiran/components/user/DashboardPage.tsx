@@ -1,7 +1,6 @@
-import Image from "next/image";
 import React from "react";
-import imgDashboard from "../../../public/assets/images/img-dashboard.png";
 import { dashboardData } from "./constant";
+import ChartComp from "./ChartComp";
 
 const DashboardPage = () => {
   return (
@@ -11,14 +10,15 @@ const DashboardPage = () => {
       </div>
       <div className="mt-10">
         <div>
-          <Image
+          {/* <Image
             src={imgDashboard}
             alt="alt"
             width={0}
             height={0}
             sizes="100vw"
             className="w-full h-auto"
-          />
+          /> */}
+          <ChartComp />
         </div>
         <div className="grid justify-center gap-3 md:flex md:justify-between md:gap-4 pt-10">
           {dashboardData.map((item) => (
