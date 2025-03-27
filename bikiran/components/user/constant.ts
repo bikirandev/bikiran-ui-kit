@@ -1,36 +1,28 @@
 
 
-export const userData = [
+export const dashboardData = [
     {
         id: 1,
-        name: "John Doe",
-        domain: 1111,
-        status: "Active",
-        email: "john@gmail.com"
+        title: "Bill",
+        domain: "USD-58.00",
+        text: 'orange'
     },
     {
-        id: 2,
-        name: "John Doe",
-        domain: 1111,
-        status: "Active",
-        email: "john@gmail.com"
-
+        id: 1,
+        title: "Bill",
+        domain: "USD-58.00",   
+        text:'secondary-300'
     },
     {
-        id: 3,
-        name: "John Doe",
-        domain: 1111,
-        status: "Active",
-        email: "john@gmail.com"
-
+        id: 1,
+        title: "Bill",
+        domain: "USD-58.00",
+        text: 'pink'
     },
     {
-        id: 4,
-        name: "John Doe",
-        domain: 1111,
-        status: "Active",
-        email: "john@gmail.com"
-
+        id: 1,
+        title: "Bill",
+        domain: "USD-58.00",
+        text: 'text-success'
     }
-
 ]
