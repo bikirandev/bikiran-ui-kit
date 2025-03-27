@@ -5,7 +5,7 @@ import { buttonVariants, outlineVariants } from "./constants";
 const DefaultButtonComp = () => {
   return (
     <section>
-      <div className="flex justify-between items-center mt-10">
+      <div className="flex justify-between items-center">
         <h2 className="font-medium text-xl md:text-3xl">Buttons</h2>
 
         <button

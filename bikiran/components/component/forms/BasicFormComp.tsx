@@ -17,7 +17,7 @@ const BasicFormComp = () => {
   return (
     <section>
       <div className="pb-2 border-b border-[#FFFFFF]/10">
-        <div className="flex justify-between items-center mt-10">
+        <div className="flex justify-between items-center">
           <h2 className="font-medium text-xl md:text-3xl">Forms</h2>
 
           <button
