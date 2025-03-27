@@ -33,18 +33,6 @@ export const menuArray: NavItem[] = [
       iconFill: icons.iconSidebarBillingFill,
       subMenu: [
         {
-          id: "/component/reboot",
-          title: "Reboot",
-          iconL: icons.iconSubmenuPricing,
-          iconF: icons.iconSubmenuPricingFill,
-        },
-        {
-          id: "/component/typography",
-          title: "Typography",
-          iconL: icons.iconSubmenuInvoice,
-          iconF: icons.iconSubmenuInvoiceFill,
-        },
-        {
           id: "/component/tables",
           title: "Tables",
           iconL: icons.iconSubmenuTable,
@@ -62,7 +50,12 @@ export const menuArray: NavItem[] = [
           iconL: icons.iconSubmenuUser,
           iconF: icons.iconSubmenuUserFill,
         },
-      
+        {
+          id: "/component/typography",
+          title: "Typography",
+          iconL: icons.iconSubmenuInvoice,
+          iconF: icons.iconSubmenuInvoiceFill,
+        },
       ]
   },
   {
@@ -72,6 +65,13 @@ export const menuArray: NavItem[] = [
     iconLine: icons.iconSidebarSupport,
     iconFill: icons.iconSidebarSupportFill,
     subMenu: [
+      {
+        id: "/product/probackup",
+        title: "ProbackUp",
+        iconL: icons.iconSubmenuPricing,
+        iconF: icons.iconSubmenuPricingFill,
+      },
+      
       {
         id: "/product/appOcean",
         title: "AppOcean",
@@ -95,6 +95,12 @@ export const menuArray: NavItem[] = [
         title: "Domain",
         iconL: icons.iconSubmenuPhone,
         iconF: icons.iconSubmenuPhoneFill,
+      },
+      {
+        id: "/product/docs",
+        title: "Docs",
+        iconL: icons.iconSubmenuPricing,
+        iconF: icons.iconSubmenuPricingFill,
       },
       {
         id: "/product/support",

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 const Footer = () => {
@@ -6,11 +7,17 @@ const Footer = () => {
       <div className="flex justify-between">
         <div className="flex gap-2">
           <p>© </p>
-          <p>iGlypic. 2025</p>
+          <p>Bikiran. 2025</p>
         </div>
-        <div className="flex ">
+        <div className="flex">
           <p>
-            Made with By: <span className="text-pink">BIKIRAN</span>
+            Made with By:{" "}
+            <button
+              onClick={() => window.open("https://www.bikiran.com/")}
+              className="text-pink"
+            >
+              BIKIRAN
+            </button>
           </p>
         </div>
       </div>
