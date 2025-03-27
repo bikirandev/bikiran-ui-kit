@@ -6,6 +6,7 @@ import { NavItem } from "./NavMenuTypes";
 import SideNavSubMenu from "./SideNavSubMenu";
 import { usePathname } from "next/navigation";
 import { CompLogo } from "../header/HeaderSection";
+import { icons } from "@/bikiran/lib/icons";
 
 const SideNavMenu = ({ onMenuClick, handleClose }: any) => {
   const [activeNavId, setActiveNavId] = useState<string | null>(null);
@@ -45,7 +46,7 @@ const SideNavMenu = ({ onMenuClick, handleClose }: any) => {
                 onClick={() => {
                   handleNavClick(item.id);
                 }}
-                className={`relative z-10 group flex gap-2.5 p-2 cursor-pointer ${activeNavId === item.id ? "bg-slate-900" : ""}`}
+                className={`relative z-10 group flex items-center justify-between gap-2.5 p-2 cursor-pointer ${activeNavId === item.id ? "bg-slate-900" : ""}`}
               >
                 <div className="flex gap-2.5">
                   <div className=" w-[26px]">
@@ -68,6 +69,20 @@ const SideNavMenu = ({ onMenuClick, handleClose }: any) => {
                     />
                   </div>
                   <h2>{item.title}</h2>
+                </div>
+                <div>
+                  {item.subMenu && item.subMenu.length > 0 && (
+                    <div>
+                      <Image
+                        src={icons.iconAngleDown}
+                        alt="alt"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-full h-auto "
+                      />
+                    </div>
+                  )}
                 </div>
               </li>
 

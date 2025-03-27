@@ -225,30 +225,7 @@ export const menuArray: NavItem[] = [
         iconLine: icons.iconSidebarBilling,
         iconFill: icons.iconSidebarBillingFill,
         subMenu: [
-          {
-            id: "/billing/account",
-            title: "Billing Account",
-            iconL: icons.iconSubmenuBillingUser,
-            iconF: icons.iconSubmenuBillingUserFill,
-          },
-          {
-            id: "/billing/invoice",
-            title: "Invoice Manage",
-            iconL: icons.iconSubmenuInvoice,
-            iconF: icons.iconSubmenuInvoiceFill,
-          },
-          {
-            id: "/billing/transaction",
-            title: "Transaction Manage",
-            iconL: icons.iconSubmenuTransaction,
-            iconF: icons.iconSubmenuTransactionFill,
-          },
-          {
-            id: "/billing/gateway",
-            title: "Gateway Transaction",
-            iconL: icons.iconSubmenuGateway,
-            iconF: icons.iconSubmenuGatewayFill,
-          },
+          
         ]
     },
     {
@@ -258,48 +235,7 @@ export const menuArray: NavItem[] = [
         iconLine: icons.iconSidebarManage,
         iconFill: icons.iconSidebarManageFill,
         subMenu: [
-          {
-            id: "/manage/invoice-execution",
-            title: "Invoice Execution",
-            iconL: icons.iconSubmenuExecution,
-            iconF: icons.iconSubmenuExecutionFill,
-          },
-          {
-            id: "/manage/application",
-            title: "Application",
-            iconL: icons.iconSubmenuApplication,
-            iconF: icons.iconSubmenuApplicationFill,
-          },
-          {
-            id: "/manage/client-list",
-            title: "Client List",
-            iconL: icons.iconSubmenuClients,
-            iconF: icons.iconSubmenuClientsFill,
-          },
-          {
-            id: "/manage/permission",
-            title: "Manage Permission",
-            iconL: icons.iconSubmenuPermission,
-            iconF: icons.iconSubmenuPermissionFill,
-          },
-          {
-            id: "/manage/server-list",
-            title: "Server List",
-            iconL: icons.iconSubmenuServer,
-            iconF: icons.iconSubmenuServerFill,
-          },
-          {
-            id: "/manage/currency-configuration",
-            title: "Currency Configuration",
-            iconL: icons.iconSubmenuCurrency,
-            iconF: icons.iconSubmenuCurrencyFill,
-          },
-          {
-            id: "/manage/payment-methods",
-            title: "Payment Methods",
-            iconL: icons.iconSubmenuWalletLite,
-            iconF: icons.iconSubmenuWalletActive,
-          },
+         
         ]
     },
     {
@@ -309,12 +245,7 @@ export const menuArray: NavItem[] = [
         iconLine: icons.iconSidebarSupport,
         iconFill: icons.iconSidebarSupportFill,
         subMenu: [
-          {
-            id: "/support/ticket",
-            title: "Support Ticket",
-            iconL: icons.iconSubmenuSupport,
-            iconF: icons.iconSubmenuSupportFill,
-          },
+          
           
         ]
     },
@@ -325,36 +256,7 @@ export const menuArray: NavItem[] = [
         iconLine: icons.iconSidebarLog,
         iconFill: icons.iconSidebarLogFill,
         subMenu: [
-          {
-            id: "/logs/user-activity",
-            title: "User Activity Logs",
-            iconL: icons.iconSubmenuUserActivity,
-            iconF: icons.iconSubmenuUserActivityFill,
-          },
-          {
-            id: "/logs/admin-activity",
-            title: "Admin Activity",
-            iconL: icons.iconSubmenuAdminActivity,
-            iconF: icons.iconSubmenuAdminActivityFill,
-          },
-          {
-            id: "/logs/unlocated-activity",
-            title: "Unallocated Activity Log",
-            iconL: icons.iconSubmenuUnlocatedLog,
-            iconF: icons.iconSubmenuUnlocatedLogFill,
-          },
-          {
-            id: "/logs/error",
-            title: "Error Log",
-            iconL: icons.iconSubmenuErrorLog,
-            iconF: icons.iconSubmenuErrorLogFill,
-          },
-          {
-            id: "/logs/test",
-            title: "Test Log",
-            iconL: icons.iconSubmenuUnlocatedLog,
-            iconF: icons.iconSubmenuUnlocatedLogFill,
-          },
+         
         ]
     },
     {
@@ -364,13 +266,7 @@ export const menuArray: NavItem[] = [
         iconLine: icons.iconSidebarEmailNotification,
         iconFill: icons.iconSidebarEmailNotificationFill,
         subMenu: [
-          {
-            id: "/emailNotification/configuration",
-            title: "Configuration",
-            iconL: icons.iconSubmenuEN,
-            iconF: icons.iconSubmenuENFill,
-          },
-          
+         
         ]
     }
 ]
