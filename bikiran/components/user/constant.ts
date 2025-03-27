@@ -13,19 +13,19 @@ export const dashboardData:dashboardDataItem[] = [
         text: 'orange'
     },
     {
-        id: 1,
+        id: 2,
         title: "Collection",
         domain: "USD-58.00",   
         text:'secondary-300'
     },
     {
-        id: 1,
+        id: 3,
         title: "Expenses",
         domain: "USD-58.00",
         text: 'pink'
     },
     {
-        id: 1,
+        id: 4,
         title: "Balance",
         domain: "USD-58.00",
         text: 'text-success'

@@ -10,7 +10,6 @@ const SideNavPage = () => {
   const handleClose = () => {
     setIsMenuOpen(false);
   };
-  console.log(handleClose);
 
   return (
     <div>

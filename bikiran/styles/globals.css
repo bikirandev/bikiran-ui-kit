@@ -125,12 +125,12 @@
 
   .custom-scrollbar::-webkit-scrollbar-track,
   body::-webkit-scrollbar-track {
-    @apply bg-primary-50;
+    @apply bg-[#19181F];
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb,
   body::-webkit-scrollbar-thumb {
-    @apply bg-slate-800 rounded-5;
+    @apply bg-[#4D4C53] rounded-5;
   }
 
   .no-scrollbar::-webkit-scrollbar {
