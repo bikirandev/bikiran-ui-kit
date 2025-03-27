@@ -56,6 +56,7 @@ const VariantTableComp = () => {
           </table>
         </div>
 
+        {/* Html code review */}
         <div className="border border-[#FFFFFF]/10 mt-8 rounded-15">
           <div className="flex justify-between bg-[#1F1E25] border-b rounded-t-15 border-[#FFFFFF]/10 px-5 py-3">
             <p>HTML</p>

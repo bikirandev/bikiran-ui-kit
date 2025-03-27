@@ -4,7 +4,6 @@ type dashboardDataItem = {
     domain: string;
     text: string;
 }
-
 export const dashboardData:dashboardDataItem[] = [
     {
         id: 1,
@@ -32,7 +31,14 @@ export const dashboardData:dashboardDataItem[] = [
     }
 ]
 
-export const userData = [
+type userDataItem = {
+    id: number;
+    name: string;
+    domain: number;
+    status: string;
+    email: string
+}
+export const userData: userDataItem[] = [
     {
         id: 1,
         name: "John Doe",
