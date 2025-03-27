@@ -17,7 +17,7 @@ const DashboardPage = () => {
             width={0}
             height={0}
             sizes="100vw"
-            className="w-full h-auto opacity-100 group-hover:opacity-0 transition-all duration-500"
+            className="w-full h-auto"
           />
         </div>
         <div className="grid justify-center gap-3 md:flex md:justify-between md:gap-4 pt-10">
