@@ -8,8 +8,10 @@ const Footer = () => {
           <p>© </p>
           <p>iGlypic. 2025</p>
         </div>
-        <div className="flex text-pink">
-          <p>Made with By: BIKIRAN</p>
+        <div className="flex ">
+          <p>
+            Made with By: <span className="text-pink">BIKIRAN</span>
+          </p>
         </div>
       </div>
     </div>
