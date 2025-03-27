@@ -9,7 +9,7 @@ const SideNavSubMenu = ({
   item,
   activeSubMenuId,
   handleSubMenuClick,
-  handleClose
+  handleClose,
 }: any) => {
   const pathname = usePathname();
   const currentPage = pathname.split("/") || "";
@@ -17,12 +17,6 @@ const SideNavSubMenu = ({
 
   // map all the subMenus id
   const activePaths = item?.subMenu?.map((subItem: any) => subItem.id);
-
-  // console.log(activeSubMenuId);
-
-  // console.log(
-  //   activeNavId === item?.id && activePaths.indexOf(pathname) !== -1
-  // );
 
   // every path change a useEffect will run, if path subitem id na hoi then set activeNavId null, when null then expand will close
   useEffect(() => {
@@ -52,8 +46,8 @@ const SideNavSubMenu = ({
           <li
             key={index}
             onClick={() => {
-              handleSubMenuClick(subItem.id)
-              handleClose()
+              handleSubMenuClick(subItem.id);
+              handleClose();
             }}
             className="relative group cursor-pointer pl-[17px] text-gray-300"
           >
